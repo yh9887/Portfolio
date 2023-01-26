@@ -765,8 +765,7 @@ input[name="rd"] { display: none;}
 /* *********************************** section 5 ********************************** */
 .section5{    
     box-sizing: border-box;
-    width: 80%;
-    width: 84%;
+    width: 90%;
     height: 100%;
     padding: 30px 0;
     margin: 0 auto;
@@ -809,7 +808,6 @@ input[name="rd"] { display: none;}
     transform: translateY(100px);
     flex-direction: column;
     flex-wrap: wrap;
-    background: pink;
 }
 .feed_wrap a{ 
     width: 148px;
