@@ -90,13 +90,14 @@ $(document).ready(function () {
           $('.mySwiper h1').removeAttr("style");
         }
       //
-        if(s_top > 700){
+        if(s_top > 600){
           ham($('.brand_logo'), 'translateY(-30px)', 1, 0 )
           ham($('.brand_txt1'), 'translateY(-30px)', 1, 200 )
           ham($('.brand_txt2'), 'translateY(-30px)', 1, 100 )
+          ham($('.shop_btn'), '0', 1, 500 )
         }
         else{
-          $('.brand_logo, .brand_txt1, .brand_txt2').removeAttr("style");
+          $('.brand_logo, .brand_txt1, .brand_txt2, .shop_btn').removeAttr("style");
         }
   });
 
