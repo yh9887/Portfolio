@@ -1,0 +1,279 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    transition: all 0.5s;
+    transition: background height opacity 0.3s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    /* display: block; */
+    margin: 0;
+    
+}
+.contents_area {
+    width: 1300px;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+.wrap{
+    
+}
+/* *********************************** 스크롤바 ********************************** */
+::-webkit-scrollbar{width: 5px;}
+::-webkit-scrollbar-thumb {background-color:#dd184e; border-radius: 100px;} 
+::-webkit-scrollbar-track {background-color:transparent;}
+
+
+/* *********************************** 헤더 ********************************** */
+.header {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 999;
+    /* position: absolute; */
+    /* position: fixed; */
+    top: 30px;
+    box-sizing: border-box;
+    transition: background opacity 0.3s;
+    
+    padding: 30px 0 0;
+    box-sizing: border-box;
+
+}
+
+.header_menu {
+    width: 75%;
+    width: 1100px;
+    margin: 0 auto;
+}
+.logo_inner {
+    width: 100%;
+    height: 90px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 170px;
+    height: auto;
+    max-width: 100%;
+    padding: 30px 0 0;
+    
+}
+.menu_ul {
+    height: 30px;
+    line-height: 30px;
+    background-color: #dd184e;
+    gap: 25px;
+    z-index: 99;
+    transition: background 0.1s;
+    transition: all 0.5s;
+    transition: background height opacity 0.3s;
+}
+
+.menu_ul a {
+    margin-top: 10px;
+    color: white;
+    margin-top: 10px;
+    color: white;
+    font-family: 'Pretendard-Regular';
+    font-size: 14px;
+}
+
+.menu_li {
+    display: inline;
+    margin: 0 15px;
+    letter-spacing: 1.5px;
+}
+
+.menu_li:hover {
+    opacity: 0.7;
+}
+
+/* *********************************** 메인 ********************************** */
+.main{
+    width: 1100px;
+    /* height: 2000px; */
+    min-height: 400px;
+    margin: 40px auto 0;
+    text-align: center;
+    margin-bottom: 250px;
+}
+.main_title{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.title_name{
+    width: 300px;
+    margin-bottom: 40px;
+    transform: translateY(-30px);
+    opacity: 0;
+    transition: all 0.7s;
+}
+.title_banner{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    transform: translateY(-30px);
+    opacity: 0;
+    transition: all 0.7s;
+}
+
+.main_box{
+    width: 100%;
+}
+.product_title{
+    height: 50px;
+    line-height: 50px;
+    margin: 50px auto;
+    color: #dd184e;
+    font-size: 30px;
+}
+.product_box{
+    /* height: 1000px; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.product_content{
+    width: calc((100% - (20px * 2))/ 3);
+    height: 530px;
+    margin: 0 20px 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease;
+}
+.product_content:nth-child(3n){margin-right:0;}
+.product_img{
+    width: 100%;
+    height: 353px;
+    border: 1px solid #dfdfdf;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.product_img a{
+    position: relative;
+    width: 100%;
+    padding-bottom: 128%;
+    display: block;
+ }
+.product_img:hover img{
+    transform: scale(1.1);
+}
+.product_img img{
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+.product_name{
+    font-family: 'Pretendard-Regular';
+    font-size: 20px;
+    text-align: left;
+}
+.product_price{
+    font-family: 'Pretendard-Regular';
+    font-size: 18px;
+    margin: 10px 0 15px;
+}
+#product_view{
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: 1px solid #dd184e;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Pretendard-Regular';
+    color: #dd184e;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+}
+#product_view:hover {
+    color: white;
+    border: none;
+    background-color: #dd184e;
+}
+
+/* *********************************** 푸터 ********************************** */
+.footer {
+    /* margin-top: 20px; */
+    width: 100vw;
+    height: 170px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background-color: #ce0034;
+}
+.fp-section{height: 170px;} 
+.fp-table{height: 170px;} 
+.active{height: 170px;} 
+.fp-completely{height: 170px;}
+.f_box1{
+    padding: 70px;
+    width: 400px;
+    text-align: right;
+    box-sizing: border-box;
+}
+.f_box1 img{width: 150px;}
+.f_box2{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.f_link{
+    display: flex;
+    flex-direction: row;
+}
+.f_link li a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family: 'Pretendard-Regular';
+    font-size: 13px;
+    margin-right: 60px;
+}
+.f_box3, .f_txt1{
+    color: white;
+    font-family: 'Pretendard-Regular';
+    font-size: 13px;
+    margin: 15px 0;
+}

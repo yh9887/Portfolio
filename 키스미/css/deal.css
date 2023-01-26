@@ -1,0 +1,612 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    transition: all 0.5s;
+    transition: background height opacity 0.3s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Pretendard-Regular';
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    /* display: block; */
+    margin: 0;
+
+}
+
+.contents_area {
+    width: 1300px;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.wrap {}
+
+/* *********************************** 스크롤바 ********************************** */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #dd184e;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+
+/* *********************************** 헤더 ********************************** */
+.header {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 999;
+    /* position: absolute; */
+    /* position: fixed; */
+    top: 30px;
+    box-sizing: border-box;
+    transition: background opacity 0.3s;
+
+    padding: 30px 0 0;
+    box-sizing: border-box;
+
+}
+
+.header_menu {
+    width: 75%;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.logo_inner {
+    width: 100%;
+    height: 90px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 170px;
+    height: auto;
+    max-width: 100%;
+    padding: 30px 0 0;
+
+}
+
+.menu_ul {
+    height: 30px;
+    line-height: 30px;
+    background-color: #ce0034;
+    gap: 25px;
+    z-index: 99;
+    transition: background 0.1s;
+    transition: all 0.5s;
+    transition: background height opacity 0.3s;
+}
+
+.menu_ul a {
+    margin-top: 10px;
+    color: white;
+    margin-top: 10px;
+    color: white;
+    font-family: 'Pretendard-Regular';
+    font-size: 14px;
+}
+
+.menu_li {
+    display: inline;
+    margin: 0 15px;
+    letter-spacing: 1.5px;
+}
+
+.menu_li:hover {
+    opacity: 0.7;
+}
+
+/* *********************************** 메인 ********************************** */
+.main {
+    width: 1100px;
+    /* height: 2000px; */
+    min-height: 400px;
+    margin: 40px auto 0;
+    text-align: center;
+    margin-bottom: 250px;
+}
+
+.deal_title {
+    width: 300px;
+    margin: 0 auto;
+
+}
+
+.deal_title img {
+    width: 100%;
+}
+
+.detail_area {
+    overflow: hidden;
+    padding: 50px 0;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail_img_box {
+    width: 50%;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.detail_img_box img {
+    width: 100%;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #efefef;
+}
+
+.detail_item_info {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 5px;
+    text-align: left;
+    padding: 0 0 0 40px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 20px;
+}
+
+tr:nth-child(1) {
+    margin-top: 30px;
+}
+
+tr:nth-child(3) {
+    border-bottom: 0.7px solid #e2e2e2;
+}
+
+tr:nth-child(3) {
+    border-bottom: 0.7px solid #e2e2e2;
+}
+
+.item_title1 {
+    height: 50px;
+    line-height: 50px;
+    /* margin: 50px auto; */
+    color: #dd184e;
+    font-size: 30px;
+    font-family: serif;
+    font-weight: 900;
+}
+
+.item_title2 {
+    /* height: 50px; */
+    line-height: 50px;
+    font-size: 25px;
+    font-weight: 900;
+    color: black;
+    padding-bottom: 10px;
+
+}
+
+.txt_title {
+    font-size: 13px;
+    font-weight: 900;
+    color: black;
+}
+
+.item_table {
+    width: 100%;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    padding: 30px 0;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.item_wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+    margin-bottom: 13px;
+}
+
+.item_wrap:nth-child(4) {
+    /* border-bottom: 1px solid #e2e2e2; */
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.item_wrap:last-child {
+    margin: 0;
+    line-height: 30px;
+}
+
+.item_sec_name {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    display: flex;
+    margin-right: 20px;
+    width: 90px;
+
+}
+
+.sec_txt_circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #cac8c9;
+    display: inline-block;
+
+    margin-right: 5px;
+
+}
+
+.item_sec_body {
+    line-height: 18px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: black;
+    margin-right: 20px;
+    font-weight: 400;
+}
+
+#sel {
+    width: 300px;
+    outline: none;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+select {
+    width:300px;
+    padding:5px;
+    border:1px solid #999;
+    font-family:'Nanumgothic';
+    border-radius:3px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance : none;
+    outline: none;
+    box-shadow: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.item_select {
+    margin-top: 30px;
+}
+
+.item_select .item_sec_name {
+    line-height: 40px;
+}
+
+/* ///////////////////////////////////////// */
+
+
+/* 색 옵션 부분 */
+.item_opt_box {
+    width: 100%;
+
+    display: flex;
+    padding-bottom: 50px;
+    /* border-bottom: 1px solid #a9a9a9; */
+
+}
+
+.item_opt_box .item_sec_name {
+    width: 100px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+
+    background-color: skyblue;
+}
+
+.circle {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.btn_color {
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 5px 0 0;
+    border: 1px solid #e9e9e9;
+}
+
+.black {
+    background: black;
+    color: #fff;
+}
+
+.white {
+    background: white;
+}
+
+.gray {
+    background: gray;
+}
+
+.pink {
+    background: pink;
+}
+
+.sel_color_box {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #dddddd;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+
+/* /////////////////////////////////// */
+.price_total {
+    text-align: right;
+    color: #222;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#p_tot {
+    font-size: 28px;
+}
+
+
+.opt_box {
+    width: 100%;
+    /* height: auto;
+    min-height: 130px; */
+    /* border: 1px solid #e8e8e8 ; */
+
+    /* 이거하면 세로 padding 안됨. 대신 줄이 자식에도 들어가있으면 겹쳐서 1px로 표시됨*/
+    border-collapse: collapse;
+
+    /* table 태그 속성 cellspacing="0" 이랑 같은거 */
+    /* border-spacing: 0;  */
+    display: flex;
+    flex-direction: column;
+}
+
+.btn_wrap {
+    display: flex;
+    height: 35px;
+    line-height: 28px;
+}
+
+.opt_box td {
+    padding: 5px 8px;
+    border-top: 0.7px solid #f2f2f2;
+    /* border-bottom: 1px solid ; */
+}
+
+/* .opt_box td { border: 1px solid;} */
+.opt_name {
+    width: 200px;
+}
+
+.opt_name>div:nth-child(2) {
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.opt_qty {
+    width: 110px;
+}
+
+.btn_qty {
+    background: #fff;
+    border: 1px solid #ddd;
+    width: 25px;
+    height: 25px;
+    float: left;
+    outline: none;
+    cursor: pointer;
+}
+
+.txt_minus {
+    border-right: none
+}
+
+.txt_plus {
+    border-left: none
+}
+
+.txt_qty {
+    background: #fff;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    width: 30px;
+    height: 25px;
+    float: left;
+    outline: none;
+    text-align: right;
+}
+
+.opt_price {
+    text-align: right;
+    font-size: 12px;
+}
+
+.btn_price_delete {
+    margin: 7px 5px;
+    vertical-align: middle;
+}
+
+.chk_item_order {
+    display: none;
+}
+
+.total_price {
+    /* height: 100px;
+    line-height: 100px; */
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+.total_price_box {
+    float: right;
+    font-weight: 400;
+}
+
+.total_price_box>span:nth-child(2) {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* *********************************** 메인- 상세 ********************************** */
+.container_info{
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    /* background: pink; */
+    margin-top: 100px;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    padding: 50px 0;
+}
+.products_detail img{
+    width: 100%;
+    max-width: 100%;
+}
+
+
+
+/* *********************************** 탑버튼 ********************************** */
+.top_btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    transition-property: background-color, opacity, visibility;
+    transition-duration: 0.3s, 0.5s, 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+    font-family: serif;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #ac0808;
+    border: none;
+}
+.top_show{
+    opacity: 1;
+    visibility: visible;
+}
+/* *********************************** 푸터 ********************************** */
+.footer {
+    /* margin-top: 20px; */
+    width: 100vw;
+    height: 170px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background-color: #ce0034;
+}
+
+.fp-section {
+    height: 170px;
+}
+
+.fp-table {
+    height: 170px;
+}
+
+.active {
+    height: 170px;
+}
+
+.fp-completely {
+    height: 170px;
+}
+
+.f_box1 {
+    padding: 70px;
+    width: 400px;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.f_box1 img {
+    width: 150px;
+}
+
+.f_box2 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.f_link {
+    display: flex;
+    flex-direction: row;
+}
+
+.f_link li a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family: 'Pretendard-Regular';
+    font-size: 13px;
+    margin-right: 60px;
+}
+
+.f_box3,
+.f_txt1 {
+    color: white;
+    font-family: 'Pretendard-Regular';
+    font-size: 13px;
+    margin: 15px 0;
+}
