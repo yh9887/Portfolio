@@ -90,7 +90,7 @@ $(document).ready(function () {
           $('.mySwiper h1').removeAttr("style");
         }
       //
-        if(s_top > 500){
+        if(s_top > 700){
           ham($('.brand_logo'), 'translateY(-30px)', 1, 0 )
           ham($('.brand_txt1'), 'translateY(-30px)', 1, 200 )
           ham($('.brand_txt2'), 'translateY(-30px)', 1, 100 )
@@ -100,7 +100,7 @@ $(document).ready(function () {
           $('.brand_logo, .brand_txt1, .brand_txt2, .shop_btn').removeAttr("style");
         }
       //
-        if(s_top > 900){
+        if(s_top > 1200){
           ham($('.info_header h1'), 'translateY(0px)', 1, 500 )
           ham($('.info_notice'), 'translate(-50%, -50%)', 1, 400 )
         }
@@ -108,7 +108,7 @@ $(document).ready(function () {
         $('.info_header h1, .info_notice').removeAttr("style");
         }
       //
-        if(s_top > 1500){
+        if(s_top > 2000){
           ham($('.white_box'), 'translateX(100%)', 1, 500 )
           ham($('.shop_menu h1'), '', 1, 500 )
           ham($('label'), '', 1, 1000 )
@@ -118,7 +118,7 @@ $(document).ready(function () {
         $('.white_box, .shop_menu h1, label').removeAttr("style");
         $('.shop_txt input').removeAttr("style");
         }
-        if(s_top > 2200){
+        if(s_top > 3200){
           ham($('.shop_txt input'), '', 1,5000 )  
         }
         else{ 
