@@ -92,12 +92,12 @@ body {
     height: auto;
     max-width: 100%;
     position: absolute;
-    left: 15px;
+    left: 20px;
     top: 15px;
 }
 .hambug{
     position: absolute;
-    right: 10px;
+    right: 20px;
     top: 12px;
 }
 .hambug img{
@@ -323,6 +323,21 @@ video {
 }
 
 /* *********************************** section2 ********************************** */
+.mySwiper h1{
+    font-family: 'GmarketSansMedium';
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+.mySwiper h1 span{
+    color: #dd184e;
+    font-size: 24px;
+    display: block;
+    font-weight: 600;
+}
+
 .swiper {
     width: 100%;
     height: 100%;
@@ -502,6 +517,7 @@ video {
     width: 200px;
     margin: 0 auto;
     font-size: 12px;
+    font-weight: 400;
 }
 
 .main_txt1 h1 span {
@@ -509,6 +525,7 @@ font-size: 30px;
 width: 100vw;
 display: block;
 margin: auto -80px;
+font-weight: 600;
 }
 .brand_logo {
     width: 150px;
@@ -673,9 +690,10 @@ margin: auto -80px;
 .swiper-button-next,.swiper-button-prev {transition: all 0.5s;}
 .mySwiper1:hover .swiper-button-next{opacity: 1;}
 .mySwiper1:hover .swiper-button-prev {opacity: 1;}
-.mySwiper h1{
+/* .mySwiper h1{
     font-family: 'GmarketSansMedium';
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 400;
     margin: 0 auto;
     width: 100%;
     text-align: center;
@@ -684,7 +702,8 @@ margin: auto -80px;
     color: #dd184e;
     font-size: 24px;
     display: block;
-}
+    font-weight: 600;
+} */
 
 /* *********************************** section 4 ********************************** */
 
@@ -881,9 +900,9 @@ input[name="rd"] { display: none;}
     z-index: 99999;
 }
 .top_down img {
-    width: 30px;
-    width: 30px;
-    margin-bottom: 5px;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 2px;
     opacity: 0.7;
     cursor: pointer;
     /* border: 1px solid #d4d4d4; */
