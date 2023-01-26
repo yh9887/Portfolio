@@ -43,7 +43,7 @@ $('.brand_btn').on('mouseover', function () {
 
 var swiper = new Swiper(".mySwiper1", {
   slidesPerView: 1,
-  spaceBetween: 30,
+  // spaceBetween: 30,
   loop: true,
   // effect : 'fade',
   navigation: {
@@ -90,7 +90,7 @@ $(document).ready(function () {
           $('.mySwiper h1').removeAttr("style");
         }
       //
-        if(s_top > 600){
+        if(s_top > 500){
           ham($('.brand_logo'), 'translateY(-30px)', 1, 0 )
           ham($('.brand_txt1'), 'translateY(-30px)', 1, 200 )
           ham($('.brand_txt2'), 'translateY(-30px)', 1, 100 )
@@ -98,6 +98,22 @@ $(document).ready(function () {
         }
         else{
           $('.brand_logo, .brand_txt1, .brand_txt2, .shop_btn').removeAttr("style");
+        }
+      //
+        if(s_top > 900){
+          ham($('.info_header h1'), 'translateY(0px)', 1, 500 )
+          ham($('.info_notice'), 'translate(-50%, -50%)', 1, 400 )
+        }
+        else{ 
+        $('.info_header h1, .info_notice').removeAttr("style");
+        }
+      //
+        if(s_top > 1200){
+          ham($('.white_box'), 'translateX(100%)', 1, 500 )
+          ham($('.shop_menu h1'), '', 1, 500 )
+        }
+        else{ 
+        $('.white_box, .shop_menu h1').removeAttr("style");
         }
   });
 
