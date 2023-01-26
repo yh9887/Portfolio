@@ -16,10 +16,10 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
 });
 
 $('.slide_img2').on('mouseover', function () {
@@ -57,6 +57,8 @@ var swiper = new Swiper(".mySwiper1", {
 });
 
 
+
+/* *********************************** 헤더 스크롤  ********************************** */
 function ham(el, trans, opa, time ) {
   setTimeout(() => {
     el.css({
@@ -65,25 +67,37 @@ function ham(el, trans, opa, time ) {
     })
   }, time);
 }
-
-/* *********************************** 헤더 스크롤  ********************************** */
 $(document).ready(function () {
-
-
-
   $(window).scroll(function () {
       let s_top = $(window).scrollTop();
 
       // 헤더
-      if (s_top > 300) {
+      if (s_top > 100) {
           $('.header').css({
             background: '#b4091fb3',
             borderBottom: '0.1px solid #ffffff0f'
           })
-      }
-      else{
-        $('.header').removeAttr("style");
-      }
+          
+        }
+        else{
+          $('.header').removeAttr("style");
+        }
+      //
+        if( s_top > 200){
+        ham($('.mySwiper h1'), 'translateY(0)', 1, 0 )
+        }
+        else{
+          $('.mySwiper h1').removeAttr("style");
+        }
+      //
+        if(s_top > 700){
+          ham($('.brand_logo'), 'translateY(-30px)', 1, 0 )
+          ham($('.brand_txt1'), 'translateY(-30px)', 1, 200 )
+          ham($('.brand_txt2'), 'translateY(-30px)', 1, 100 )
+        }
+        else{
+          $('.brand_logo, .brand_txt1, .brand_txt2').removeAttr("style");
+        }
   });
 
 });
