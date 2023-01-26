@@ -108,13 +108,24 @@ $(document).ready(function () {
         $('.info_header h1, .info_notice').removeAttr("style");
         }
       //
-        if(s_top > 1200){
+        if(s_top > 1500){
           ham($('.white_box'), 'translateX(100%)', 1, 500 )
           ham($('.shop_menu h1'), '', 1, 500 )
+          ham($('label'), '', 1, 1000 )
+          ham($('.shop_txt input'), '', 1,10000 )  
         }
         else{ 
-        $('.white_box, .shop_menu h1').removeAttr("style");
+        $('.white_box, .shop_menu h1, label').removeAttr("style");
+        $('.shop_txt input').removeAttr("style");
         }
+        if(s_top > 2200){
+          ham($('.shop_txt input'), '', 1,5000 )  
+        }
+        else{ 
+        $('.shop_txt input').removeAttr("style");
+        }
+
+        // console.log(s_top)
   });
 
 });
