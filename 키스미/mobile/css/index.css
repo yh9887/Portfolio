@@ -518,6 +518,7 @@ font-weight: 600;
 .section3 {
     background-color: white;
     background-color: #fff7f7;
+    background: url(../img/info/info_Banner1.jpg)no-repeat center /cover;
 }
 .info_header h1{
     font-family: 'GmarketSansMedium';
