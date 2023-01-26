@@ -344,11 +344,9 @@ video {
 }
 
 .main_img {
-    display: block;
-    width: 50%;
-    height: 100%;
-    float: right;
-    overflow: hidden;
+        display: block;
+        float: right;
+        overflow: hidden;
 }
 
 .slide_img1,
@@ -454,8 +452,9 @@ video {
 
 
 .swiper {
-    margin-left: auto;
-    margin-right: auto;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 40px 0 0;
 }
 
 .swiper-button-next,
@@ -492,6 +491,7 @@ video {
 .slide_img1, .slide_img2 {
     width: 100%;
     height: 50%;
+    margin-top: 40px;
 }
 .slide_main {
     width: 100%;
@@ -673,6 +673,18 @@ margin: auto -80px;
 .swiper-button-next,.swiper-button-prev {transition: all 0.5s;}
 .mySwiper1:hover .swiper-button-next{opacity: 1;}
 .mySwiper1:hover .swiper-button-prev {opacity: 1;}
+.mySwiper h1{
+    font-family: 'GmarketSansMedium';
+    font-size: 14px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+.mySwiper h1 span{
+    color: #dd184e;
+    font-size: 24px;
+    display: block;
+}
 
 /* *********************************** section 4 ********************************** */
 
