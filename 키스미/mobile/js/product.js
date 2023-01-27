@@ -21,20 +21,17 @@ $(document).ready(function () {
     ham($('.title_name'), 'translateY(0)', '1', '0');
     ham($('.title_banner'), 'translateY(0)', '1', '0');
 
+    
+
     $(window).scroll(function () {
         let s_top = $(window).scrollTop();
 
         // ham($('.title_name'),'translateY(0)', '1','0');
         // ham($('.title_banner'),'translateY(0)', '1','0');
 
-        if (s_top >= 600 && s_top < 5000) {
+        if (s_top >= 100 && s_top < 5000) {
             ham($('.product_content'), 'translateY(0)', '1', '0');
         }
-        else {
-            $('.product_content').removeAttr("style");
-        }
-
-
 
         // 헤더
         if (s_top > 100) {
@@ -48,21 +45,26 @@ $(document).ready(function () {
         //
     });
     let ham_chk = true;
-    $(document).on('click', '.hambug', function(){
-  
-      if(ham_chk) {
-        // 햄버거 => X 관련 코드  
-        $(".hambug").toggleClass('hamimg_active')
-        $('.aside').toggleClass('ham_active') ;
-    }
+    $(document).on('click', '.hambug', function () {
+
+        if (ham_chk) {
+            // 햄버거 => X 관련 코드  
+            $(".hambug").toggleClass('hamimg_active')
+            $('.aside').toggleClass('ham_active');
+        }
+
+        else {
+            // X => 햄버거 관련 코드   
+            $(".hambug").toggleClass('hamimg_active')
+            $('.aside').toggleClass('ham_active');
+        }
+    });
     
-    else { 
-        // X => 햄버거 관련 코드   
-        $(".hambug").toggleClass('hamimg_active')  
-        $('.aside').toggleClass('ham_active') ;
-      }  
-  });
-
+        $(".downBtn").click(function () {
+            $("html, body").animate({ scrollTop: $(document).height() },);
+        });
+        $(".topBtn").click(function () {
+            $("html, body").animate({ scrollTop: 0, behavior: "smooth" });
+        });
 })
-
 
