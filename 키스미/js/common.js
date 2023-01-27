@@ -72,29 +72,3 @@ function get_url_info(key) {
 // const cate_arr = ['EYELASH CURLER', 'LIP', 'REMOVE', 'EYEBROW', 'MASCARA', 'EYELINER'];
 
 
-/////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////
-// 헤더 메뉴 스크롤 따라다니게 하기
-// let menu_o_top = $('.menu_ul').offset().top ;
-
-// $(window).scroll(function () {
-//     let s_top = $(window).scrollTop();
-    
-//     // 스크롤이 메뉴 윗선에 닿았을때
-//     if (s_top >= menu_o_top) {
-//         $('.menu_ul').css({
-//             position: 'fixed',
-//             top: 0,
-//             zIndex: 9999999,
-//             width:'1100px',
-            
-//         })
-        
-//     }
-//     else {
-//         $('.menu_ul').css({
-//             position: 'static',
-//         })
-//     }
-// });

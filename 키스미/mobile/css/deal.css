@@ -40,6 +40,9 @@ body {
     margin: 0;
 
 }
+::-webkit-scrollbar {
+    display: none;
+}
 
 .contents_area {
     width: 1300px;
@@ -69,84 +72,154 @@ body {
 /* *********************************** 헤더 ********************************** */
 .header {
     width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    z-index: 999;
-    /* position: absolute; */
-    /* position: fixed; */
-    top: 30px;
-    box-sizing: border-box;
+    z-index: 999999999;
+    position: fixed;
     transition: background opacity 0.3s;
-
-    padding: 30px 0 0;
-    box-sizing: border-box;
-
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 50px;
+    border-bottom: 1px solid #bd273a33;
 }
 
 .header_menu {
     width: 75%;
-    width: 1100px;
     margin: 0 auto;
 }
 
 .logo_inner {
     width: 100%;
-    height: 90px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .logo {
-    width: 170px;
+    width: 100px;
     height: auto;
     max-width: 100%;
-    padding: 30px 0 0;
+    position: absolute;
+    left: 25px;
+    top: 15px;
+    
+}
+
+
+
+.aside {
+
+    width: 300px;
+    height: 100%;
+    transition: all 0.3s;
+
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    z-index: 2147483647;
+    width: 300px;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: all 0.3s;
+    padding: 40px;
+    box-sizing: border-box;
 
 }
 
-.menu_ul {
+.hambug {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+    top: 12px;
+    background: url(../img/hamburger2.png) no-repeat center / cover;
+}
+
+.hamimg_active {
+    background: url(../img/cross2.png) no-repeat center / cover;
+}
+
+.hambug img {
+    width: 28px;
+    cursor: pointer;
+
+}
+
+.ham_active {
+    transform: translateX(0);
+}
+
+.category {
+    width: 100%;
+    margin-bottom: 30px;
+    /* background-color: pink; */
+}
+
+.category ul {
+    font-weight: 600;
+}
+
+.category li {
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.community {
+    width: 100%;
+
+    margin-bottom: 30px;
+}
+
+.community ul {
+    font-weight: 600;
+}
+
+.community li {
+    font-weight: 100;
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+.Sns {
+    width: 100%;
+}
+
+.Sns div {
+    font-weight: 600;
+}
+
+.ham_sns a img {
+    width: 30px;
     height: 30px;
-    line-height: 30px;
-    background-color: #ce0034;
-    gap: 25px;
-    z-index: 99;
-    transition: background 0.1s;
-    transition: all 0.5s;
-    transition: background height opacity 0.3s;
+    margin-top: 15px;
 }
 
-.menu_ul a {
-    margin-top: 10px;
-    color: white;
-    margin-top: 10px;
-    color: white;
-    font-family: 'Pretendard-Regular';
-    font-size: 14px;
+.ham_sns .sns {
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 0;
+    border: none;
 }
 
-.menu_li {
-    display: inline;
-    margin: 0 15px;
-    letter-spacing: 1.5px;
-}
-
-.menu_li:hover {
-    opacity: 0.7;
+ul div {
+    margin-bottom: 15px;
 }
 
 /* *********************************** 메인 ********************************** */
 .main {
-    width: 1100px;
-    /* height: 2000px; */
     min-height: 400px;
-    margin: 40px auto 0;
+    /* margin: 40px auto 0; */
     text-align: center;
-    margin-bottom: 250px;
+    padding-top: 90px;
 }
 
 .deal_title {
-    width: 300px;
+    width: 200px;
+    margin-bottom: 40px;
+    transform: translateY(-30px);
+    transition: all 0.7s;
     margin: 0 auto;
-
+    margin-top: 30px;
 }
 
 .deal_title img {
@@ -518,68 +591,58 @@ select::-ms-expand {
 
 
 /* *********************************** 탑버튼 ********************************** */
-.top_btn {
-    width: 70px;
+.top_down {
+    width: auto;
     height: 70px;
     border-radius: 50%;
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 20px;
+    right: 20px;
     text-align: center;
-    line-height: 70px;
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
-    transition-property: background-color, opacity, visibility;
-    transition-duration: 0.3s, 0.5s, 0.5s;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 999;
-    font-family: serif;
-    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    z-index: 99999;
+}
+
+.top_down img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 2px;
+    opacity: 0.7;
     cursor: pointer;
-    background-color: #ac0808;
-    border: none;
+    /* border: 1px solid #d4d4d4; */
+    border-radius: 50%;
+    background: rgba(180, 9, 31, 0.7);
 }
-.top_show{
-    opacity: 1;
-    visibility: visible;
-}
+
 /* *********************************** 푸터 ********************************** */
 .footer {
-    /* margin-top: 20px; */
-    width: 100vw;
-    height: 170px;
-    padding: 0 10px;
-    box-sizing: border-box;
     background-color: #ce0034;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.fp-section {
-    height: 170px;
+.contents_area {
+    width: auto;
+    /* height: 300px; */
+    flex-direction: column;
 }
 
-.fp-table {
-    height: 170px;
-}
-
-.active {
-    height: 170px;
-}
-
-.fp-completely {
-    height: 170px;
-}
 
 .f_box1 {
     padding: 70px;
     width: 400px;
     text-align: right;
     box-sizing: border-box;
+    padding: 0;
+    width: auto;
+    text-align: left;
+    margin-bottom: 15px;
 }
 
 .f_box1 img {
     width: 150px;
+    width: 110px;
 }
 
 .f_box2 {
@@ -592,6 +655,7 @@ select::-ms-expand {
 .f_link {
     display: flex;
     flex-direction: row;
+    display: block;
 }
 
 .f_link li a {
@@ -609,4 +673,9 @@ select::-ms-expand {
     font-family: 'Pretendard-Regular';
     font-size: 13px;
     margin: 15px 0;
+}
+
+
+.f_box3 {
+    margin: 0;
 }

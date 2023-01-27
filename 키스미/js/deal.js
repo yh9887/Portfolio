@@ -217,8 +217,3 @@ function moveBackToTop(){
         window.scrollTo({top:0, behavior:"smooth"})
     }
 }
-
-// 스크롤할때마다, checkScroll을 호출해라.
-window.addEventListener('scroll', checkScroll);
-// 클릭하면 oveBackToTop를 호출해라
-topBtn.addEventListener('click',moveBackToTop);

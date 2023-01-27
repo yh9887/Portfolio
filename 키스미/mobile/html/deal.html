@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
     <title>Document</title>
     <!-- <link rel="stylesheet" href="../css/product.css"> -->
     <link rel="stylesheet" href="../css/deal.css">
@@ -16,25 +19,16 @@
 </head>
 
 <body>
-    <div class="wrap">
-        <div class="header">
-            <div class="logo_inner">
-                <a href="../html/kissme.html">
-                    <img class="logo" src="../img/logo.png" alt="">
-                </a>
-            </div>
-            <div class="header_menu">
-                <ul class="menu_ul">
-                    <li class="menu_li"><a href="product.html?cate=0">EYELASH CURLER</a></li>
-                    <li class="menu_li"><a href="product.html?cate=1">LIP</a></li>
-                    <li class="menu_li"><a href="product.html?cate=2">MASCARA & EYELINER</a></li>
-                    <li class="menu_li"><a href="product.html?cate=3">EYEBROW</a></li>
-                    <li class="menu_li"><a href="">KISEME STORY</a></li>
-                    <li class="menu_li"><a href="">COMPANY</a></li>
-                    <li class="menu_li"><a href="">NOTICE</a></li>
-                </ul>
+    <div class="header">
+        <div class="logo_inner">
+            <a href="../index.html">
+                <img class="logo" src="../img/logo.png" alt="">
+            </a>
+            <div class="hambug">
+                <!-- <img src="./img/hamburger.png" alt=""> -->
             </div>
         </div>
+    </div>
 
         <div class="main">
             <!-- 아이템 보여지는 부분 -->
@@ -97,7 +91,7 @@
                 <div class="f_box1">
                     <img src="../img/logo_white.png">
                 </div>
-
+    
                 <div class="f_box2">
                     <ul class="f_link">
                         <li><a href="">>이세한 그룹 </a></li>
@@ -107,7 +101,7 @@
                         <li><a href="">>개인정보취급방침</a></li>
                         <li><a href="">>법적고지</a></li>
                     </ul>
-
+    
                     <div class="f_box3">
                         <div class="f_txt1">
                             (주)한국키스미 대표자 : 김순길, KIRIHARA TOSHIYUKI 사업자등록번호 : 774-86-01045 <br>
@@ -118,8 +112,45 @@
                 </div>
             </div>
         </div>
-        <button class="top_btn" >KISSME</button>
-    </div>
+       
+        
+        <div class="top_down">
+            <img src="../img/up.png" class="topBtn" alt="">
+            <img src="../img/down.png" class="downBtn" alt="">
+        </div>
+    
+        <aside class="aside">
+            <div class="category">
+                <ul> <div> SHOP</div>                
+                    <li><a href="product.html?cate=0">EYELASH CURLER</a></li>
+                    <li><a href="product.html?cate=1">LIP</a></li>
+                    <li><a href="product.html?cate=2">MASCARA & EYELINER</a></li>
+                    <li><a href="product.html?cate=3">EYEBROW</a></li>
+                </ul>
+            </div>
+            <div class="community">
+                <ul> <div> COMMUNITY</div>
+                    <a href=""><li>NOTICE</li></a>
+                    <a href=""><li>COMMPANY</li></a>
+                    <a href=""><li>KISSME STORY</li></a>
+                </ul>
+            </div>
+            <div class="Sns">
+                <div> SNS
+                    <div class="ham_sns">
+                        <a href="https://www.facebook.com/KISSME.archive/" target="_blank" class="sns">
+                            <img  src="../img/ham_facebook.png" alt="">
+                        </a>
+                        <a href="https://www.instagram.com/kissme.kr/" target="_blank" class="sns">
+                            <img  src="../img/ham_instagram.png" alt="">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCUrAxEMS92hdGmUQW_03rVQ" target="_blank" class="sns">
+                            <img  src="../img/ham_youtube.png" alt="">
+                        </a>
+                    </div>
+                </div> 
+            </div>
+        </aside>
 </body>
 
 </html>
