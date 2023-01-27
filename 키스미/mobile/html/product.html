@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/product.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -12,25 +15,17 @@
     <script defer src="../js/item_list.js"></script>
 </head>
 <body>
-    <div class="wrap">
         <div class="header">
             <div class="logo_inner">
-                <a href="../html/kissme.html">
+                <a href="./index.html">
                     <img class="logo" src="../img/logo.png" alt="">
                 </a>
-            </div>
-            <div class="header_menu">
-                <ul class="menu_ul">
-                    <li class="menu_li"><a href="product.html?cate=0">EYELASH CURLER</a></li>
-                    <li class="menu_li"><a href="product.html?cate=1">LIP</a></li>
-                    <li class="menu_li"><a href="product.html?cate=2">MASCARA & EYELINER</a></li>
-                    <li class="menu_li"><a href="product.html?cate=3">EYEBROW</a></li>
-                    <li class="menu_li"><a href="product.html?cate=story">KISEME STORY</a></li>
-                    <li class="menu_li"><a href="product.html?cate=company">COMPANY</a></li>
-                    <li class="menu_li"><a href="product.html?cate=notice">NOTICE</a></li>
-                </ul>
+                <div class="hambug">
+                    <!-- <img src="./img/hamburger.png" alt=""> -->
+                </div>
             </div>
         </div>
+
         <div class="main">
             <div class="main_title">
                 <!-- <img src="../img/키스미/title.png" alt="" class="title_name"> 
@@ -110,6 +105,7 @@
                 </div> -->
             </div>
         </div>
+
         <div class="footer">
             <div class="contents_area">
                 <div class="f_box1">
@@ -136,6 +132,39 @@
             </div>
         </div>
         </div>
-    </div>
+        
+        <aside class="aside">
+            <div class="category">
+                <ul> <div> SHOP</div>                
+                    <a href=""><li>EYELASHCURLER</li></a>
+                    <a href=""><li>LIP</li></a>
+                    <a href=""><li>MASCARA</li></a>
+                    <a href=""><li>IBROW</li></a>
+                </ul>
+            </div>
+            <div class="community">
+                <ul> <div> COMMUNITY</div>
+                    <a href=""><li>NOTICE</li></a>
+                    <a href=""><li>COMMPANY</li></a>
+                    <a href=""><li>KISSME STORY</li></a>
+                </ul>
+            </div>
+            <div class="Sns">
+                <div> SNS
+                    <div class="ham_sns">
+                        <a href="https://www.facebook.com/KISSME.archive/" target="_blank" class="sns">
+                            <img  src="./img/ham_facebook.png" alt="">
+                        </a>
+                        <a href="https://www.instagram.com/kissme.kr/" target="_blank" class="sns">
+                            <img  src="./img/ham_instagram.png" alt="">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCUrAxEMS92hdGmUQW_03rVQ" target="_blank" class="sns">
+                            <img  src="./img/ham_youtube.png" alt="">
+                        </a>
+                    </div>
+                </div> 
+            </div>
+        </aside>
+    
 </body>
 </html>
