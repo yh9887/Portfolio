@@ -79,9 +79,9 @@ $(document).ready(function () {
           })
           
         }
-        // else{
-        //   $('.header').removeAttr("style");
-        // }
+        else{
+          $('.header').removeAttr("style");
+        }
       //
         if( s_top > 200){
         ham($('.mySwiper h1'), 'translateY(0)', 1, 0 )
@@ -113,6 +113,7 @@ $(document).ready(function () {
           ham($('.shop_menu h1'), '', 1, 500 )
           ham($('label'), '', 1, 1000 )
           ham($('.shop_txt input'), '', 1,10000 )  
+          ham($('.shop_txt span'), 'translateX(0)', 1,10000 )  
         }
         // else{ 
         // $('.white_box, .shop_menu h1, label').removeAttr("style");
