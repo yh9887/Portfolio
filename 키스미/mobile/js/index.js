@@ -128,7 +128,30 @@ $(document).ready(function () {
         // $('.shop_txt input').removeAttr("style");
         // }
 
-        console.log(s_top)
+        // console.log(s_top)
   });
+
+  $(".downBtn").click(function(){
+    $("html, body").animate({ scrollTop: $(document).height() }, 500);
+  });
+  $(".topBtn").click(function(){
+    $("html, body").animate({ scrollTop: 0,  behavior: "smooth"});
+  });
+
+  let ham_chk = true;
+  $(document).on('click', '.hambug', function(){
+
+    if(ham_chk) {
+      // 햄버거 => X 관련 코드  
+      $(".hambug").toggleClass('hamimg_active')
+      $('.aside').toggleClass('ham_active') ;
+  }
+  
+  else { 
+      // X => 햄버거 관련 코드   
+      $(".hambug").toggleClass('hamimg_active')  
+      $('.aside').toggleClass('ham_active') ;
+    }  
+});
 
 });
