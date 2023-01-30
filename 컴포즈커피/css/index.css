@@ -44,7 +44,9 @@ a {
     display: none;
 }
 
-
+.wrap{
+    max-width: 100%;
+}
 .video_wrap {
     position: relative;
     width: 100%;
@@ -109,7 +111,10 @@ video {
     display: flex;
 
 }
-
+.logo {
+    width: 250px;
+    height: 100%;
+}
 .header_active {
     transform: translateY(-100%);
 }
@@ -117,7 +122,7 @@ video {
 .header_menu {
     height: 90px;
     line-height: 90px;
-    padding: 0 70px;
+    padding: 0 0 0 70px;
     box-sizing: border-box;
 }
 
@@ -134,13 +139,31 @@ video {
 .menu_li:hover {
     color: #ffd001 !important;
 }
-
-.logo {
-    width: 250px;
-    height: 100%;
+.menu_icon{
+    height:90px;
+    line-height: 100px;
+    display: flex;
+    gap: 13px;
+    margin-left: 30px;
 }
 
-.section2 {
-    height: 500px;
-    background-color: pink;
+.apple{line-height: 97px;}
+.apple > img{
+    width: 22px;
+    height: 22px;
+}
+.instagram{line-height: 98px;}
+.instagram > img{
+    width: 20px;
+    height: 20px;
+}
+.android{line-height: 103px;}
+.android > img{
+    width: 24px;
+    height: 24px;
+}
+.ham_menu{
+    width: 100%;
+    height: 90px;
+    background-color: palegoldenrod;
 }
