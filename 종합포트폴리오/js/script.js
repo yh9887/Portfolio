@@ -37,7 +37,7 @@ $(document).ready(function(){
         width:ww,
         height:wh
       })
-    	.appendTo("#wrap")
+    	.appendTo("body")
     ;
     var ctx=$layer.get(0).getContext("2d");
     ctx.fillStyle="#fff";
