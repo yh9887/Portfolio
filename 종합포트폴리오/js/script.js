@@ -15,7 +15,7 @@ $(document).ready(function(){
   
   function startBlinking($layer){
     function blink(){
-      TweenMax.to($layer,0.2+(Math.random()*0.4),{
+      TweenMax.to($layer,0.2+(Math.random()*0.8),{
         opacity:0.4+(Math.random()*0.4),
         onComplete:blink,
         repeat:1,

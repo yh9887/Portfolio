@@ -23,8 +23,8 @@ body {
 
 #wrap {
     width: 100%;
-    height: 1000px;
-    position: relative;
+    height: 3000px;
+    /* position: relative; */
 }
 
 .bg_intro {
@@ -35,8 +35,8 @@ body {
 
 .gradient {
     background-image: radial-gradient(circle at 85.36% 111.24%, #0d5c99 0, #008cff 5.56%, #1c85ff 11.11%, #687cff 16.67%, #8f73ff 22.22%, #ac69f6 27.78%, #c35ee8 33.33%, #d753d8 38.89%, #e647c7 44.44%, #f23cb5 50%, #fb33a2 55.56%, #ff2d90 61.11%, #ff2c7d 66.67%, #ff306a 72.22%, #ff3958 77.78%, #fe4346 83.33%, #f74e34 85.89%, #ef5921 94.44%, #e46303 100%);
-        /* background-size: 300%;
-        animation: grad 4s linear infinite; */
+        background-size: 300%;
+        animation: grad 4s linear infinite;
 }
 
 @keyframes grad {
@@ -335,7 +335,7 @@ body {
 
 .planet3 img {
     position: absolute;
-    bottom: 440px;
+    top: 250px;
     left: 230px;
     animation: floating 1.5s ease-in infinite;
     width: 300px;
@@ -348,21 +348,31 @@ body {
     right: 300px;
     width: 250px;
     transition: all 0.5s;
-    animation: animate__fadeIn 3s linear infinite;
-
     animation: pulse 2s ease-in infinite;
+    z-index: 999999;
 }
 .planet5 img{
     position: absolute;
-    top:28%;
+    top:50%;
     left:62%;
-    width: 1500px;
+    width: 600px;
     transition: all 0.5s;
-    transform: translate(-50%, -50%) rotate(-20deg);
+    transform: translate(-50%, -50%) rotate(10deg);
 }
-
+.planet6 img{
+    position: absolute;
+    top:50%;
+    left:0%;
+}
+.planet7 img{
+    position: absolute;
+    top:70%;
+    right:140px;
+    width: 200px;
+    transform:rotate(10deg);
+}
 @keyframes pulse {
-    50% {transform: translateY(-30px);opacity: 0;}
+    50% {transform: translateY(-30px);}
     100% {transform: translateY(0px);opacity: 1;}
 }
 
@@ -385,15 +395,15 @@ body {
     transition: all 0.5s;
     -webkit-text-stroke: 3px #d6f4f4;
     font-variation-settings: "wght" 900, "ital" 1;
-    font-size: 120px;
+    font-size: 150px;
     text-align: center;
     color: transparent;
     font-family: "Meta", sans-serif;
-    text-shadow: 10px 10px 0px #05bdb7, 10px 10px 0px #4455a2, 20px 20px 0px #4b18c7, 25px 25px 0px #f40468, 45px 45px 10px #970443;
+    text-shadow: 10px 10px 0px #05bdb7, 10px 10px 0px #c1c4d3, 20px 20px 0px #4700ff, 25px 25px 0px #f40468, 45px 45px 10px #ca1462;
     cursor: pointer;
     z-index: 99999999999;
     position: absolute;
-    top: 35%;
+    top: 49%;
     left: 50%;
     /* right: 50%; */
     transform: translate(-50%, -50%);
@@ -402,4 +412,5 @@ body {
 .title:hover {
     font-variation-settings: "wght" 100, "ital" 0;
     text-shadow: none;
+    font-weight: 900;
 }
