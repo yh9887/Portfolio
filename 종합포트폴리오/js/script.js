@@ -53,10 +53,10 @@ $(document).ready(function(){
     var y=Math.round(Math.random()*ch)-0.5;
     
     var s=Math.random();
-    s=Math.pow(s,30)*2;
-    s+=0.3
+    s=Math.pow(s,30)*3;
+    s+=0.7
     if(Math.random()<0.1){
-      s*=1;
+      s*=2;
     }
     if(s<0) s=0;
     
