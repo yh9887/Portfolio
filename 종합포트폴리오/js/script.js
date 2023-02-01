@@ -1,86 +1,94 @@
-$(document).ready(function(){
-  var layers=6;
-  var starDensity=0.0025;
-  
-  
-  var ww=$(document).width();
-  var wh=$(document).height();
+(function() {
 
-  var dpi=window.devicePixelRatio;
-  var cw=ww*dpi;
-  var ch=wh*dpi;
-  var stars=ww*ww*starDensity*dpi;
-  
-  var contexts=[];
-  
-  function startBlinking($layer){
-    function blink(){
-      TweenMax.to($layer,0.2+(Math.random()*0.8),{
-        opacity:0.4+(Math.random()*0.4),
-        onComplete:blink,
-        repeat:1,
-        yoyo:true,
-        ease:Quad.easeInOut
-      }); 
-    }
-    blink();
-  }
-  
-  for(var i=0;i<layers;i++){
-    var $layer=$("<canvas/>")
-    	.addClass("layer")
-    	.attr({
-        width:ww,
-        height:wh
-      })
-    	.css({
-        width:ww,
-        height:wh
-      })
-    	.appendTo("body")
-    ;
-    var ctx=$layer.get(0).getContext("2d");
-    ctx.fillStyle="#fff";
-    contexts.push(ctx); 
-    startBlinking($layer);
-    
-  }
-  
-  
-  
-  for(var i=0;i<stars;i++){
-    var x=Math.round(Math.random()*cw)-0.5;
-    var y=Math.round(Math.random()*ch)-0.5;
-    
-    var s=Math.random();
-    s=Math.pow(s,30)*2;
-    s+=1
-    if(Math.random()<0.1){
-      s*=2;
-    }
-    if(s<0) s=0;
-    
-    var a=1;
-    if(s<1){
-      a=s;
-      s=1;
-    }
-    
-    var id=Math.round(Math.random()*(contexts.length-1));
-    var ctx=contexts[id];
+    var slidersContainer = document.querySelector('.sliders-container');
 
-    ctx.translate(x,y);
-    ctx.globalAlpha = a;
-    ctx.rotate(Math.PI/3.9);
-    ctx.fillRect(0,0,s*dpi,s*dpi);
-    
-    if(s>=1){
-	  ctx.globalAlpha = 0.03;
-		var shineSize=(s*s*s)*1.5*dpi;
-		ctx.fillRect((s-(shineSize))/2,(s-(shineSize))/2,shineSize,shineSize);
-    }	
-      
-    ctx.rotate(-Math.PI/4);
-    ctx.translate(-x,-y);
-  }
- })
+    // Initializing the numbers slider
+    var msNumbers = new MomentumSlider({
+        el: slidersContainer,
+        cssClass: 'ms--numbers',
+        range: [1, 4],
+        rangeContent: function (i) {
+            return '0' + i;
+        },
+        style: {
+            transform: [{scale: [0.4, 1]}],
+            opacity: [0, 1]
+        },
+        interactive: false
+    });
+
+    // Initializing the titles slider
+    var titles = [
+        'King of the Ring Fight',
+        'Sound of Streets',
+        'Urban Fashion',
+        'Windy Sunset'
+    ];
+    var msTitles = new MomentumSlider({
+        el: slidersContainer,
+        cssClass: 'ms--titles',
+        range: [0, 3],
+        rangeContent: function (i) {
+            return '<h3>'+ titles[i] +'</h3>';
+        },
+        vertical: true,
+        reverse: true,
+        style: {
+            opacity: [0, 1]
+        },
+        interactive: false
+    });
+
+    // Initializing the links slider
+    var msLinks = new MomentumSlider({
+        el: slidersContainer,
+        cssClass: 'ms--links',
+        range: [0, 3],
+        rangeContent: function () {
+            return '<a class="ms-slide__link">View Case</a>';
+        },
+        vertical: true,
+        interactive: false
+    });
+
+    // Get pagination items
+    var pagination = document.querySelector('.pagination');
+    var paginationItems = [].slice.call(pagination.children);
+
+    // Initializing the images slider
+    var msImages = new MomentumSlider({
+        // Element to append the slider
+        el: slidersContainer,
+        // CSS class to reference the slider
+        cssClass: 'ms--images',
+        // Generate the 4 slides required
+        range: [0, 3],
+        rangeContent: function () {
+            return '<div class="ms-slide__image-container"><div class="ms-slide__image"></div></div>';
+        },
+        // Syncronize the other sliders
+        sync: [msNumbers, msTitles, msLinks],
+        // Styles to interpolate as we move the slider
+        style: {
+            '.ms-slide__image': {
+                transform: [{scale: [1.5, 1]}]
+            }
+        },
+        // Update pagination if slider change
+        change: function(newIndex, oldIndex) {
+            if (typeof oldIndex !== 'undefined') {
+                paginationItems[oldIndex].classList.remove('pagination__item--active');
+            }
+            paginationItems[newIndex].classList.add('pagination__item--active');
+        }
+    });
+
+    // Select corresponding slider item when a pagination button is clicked
+    pagination.addEventListener('click', function(e) {
+        if (e.target.matches('.pagination__button')) {
+            var index = paginationItems.indexOf(e.target.parentNode);
+            msImages.select(index);
+        }
+    });
+
+})();
