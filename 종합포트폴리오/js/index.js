@@ -32,22 +32,6 @@ function intersectionHandler(entry) {
     }
 }
 
-
-// $(document).ready(function(){
-
-//     window.addEventListener('scroll', function(){
-//         let sec2_o_top = $('#section2').offset().top;
-//         let s_top = $(window).scrollTop();
-//         // console.log(sec2_o_top, s_top)
-
-//         if(sec2_o_top == s_top){
-//             $('.sec2_img').toggleClass('sec2_animation');
-//         }
-
-
-
-//     })
-// });
 window.addEventListener('scroll', function () {
 
     let s_top = $(window).scrollTop();
@@ -58,7 +42,8 @@ window.addEventListener('scroll', function () {
             top: 0,
             left:0,
             height: '70px',
-            background: '#6260604d'
+            background: 'rgb(179 199 245 / 23%',
+            borderBottom: 'rgb(86 54 227 / 8%)'
         })
         $('.logo img').css({
             height: '45px'
@@ -80,3 +65,6 @@ window.addEventListener('scroll', function () {
         header.classList.remove("drop");
     }
 });
+
+
+// 

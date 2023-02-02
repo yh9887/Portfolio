@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Bilbo+Swash+Caps&family=Bodoni+Moda:opsz@6..96&family=Calligraffitti&family=Caveat:wght@400;700&family=Cormorant:wght@300&family=IM+Fell+Double+Pica:ital@1&family=Nanum+Myeongjo&family=Niconne&family=Noto+Sans+KR:wght@100&family=Old+Standard+TT&family=Poiret+One&family=Romanesco&display=swap');
+
 :root {
     --color-text: #fff;
     --color-bg: #ddd;
@@ -122,9 +123,11 @@ ul {
     transition: all .3s ease;
     position: relative;
 }
-.menu_li:hover{
+
+.menu_li:hover {
     opacity: 0.6;
 }
+
 a>.menu_li::after {
     content: '';
     width: 0;
@@ -141,30 +144,39 @@ a:hover>.menu_li::after {
     left: 0px;
     height: 1px;
 }
+
 .header.drop {
     position: fixed;
     animation: dropHeader 0.3s;
 }
+
 @keyframes dropHeader {
-    0% {top: -5rem;}
-    100% {top: 0;}
+    0% {
+        top: -5rem;
+    }
+
+    100% {
+        top: 0;
+    }
 }
 
 /* ------  section1 ------- */
-#section1{
+#section1 {
     position: relative;
     padding: 70px;
     overflow: hidden;
 }
-.sec1_wrap{
+
+.sec1_wrap {
     height: 600px;
     margin: 0 auto;
     background-color: white;
     position: relative;
     overflow: hidden;
 }
-.sec1_title{
-        /* font-family: 'Caveat', cursive;
+
+.sec1_title {
+    /* font-family: 'Caveat', cursive;
     font-family: 'Romanesco', cursive;
     font-family: 'Cormorant', serif; */
     font-family: 'Old Standard TT', serif;
@@ -172,7 +184,7 @@ a:hover>.menu_li::after {
     font-family: 'Abhaya Libre', serif;
     font-family: 'Nanum Myeongjo', serif;
     font-size: 120px;
-    color:Black;
+    color: Black;
     letter-spacing: -10px;
     line-height: 100px;
     position: absolute;
@@ -180,20 +192,22 @@ a:hover>.menu_li::after {
     left: 150px;
     z-index: 10;
 }
-.sec1_title> span:first-child{
+
+.sec1_title>span:first-child {
     margin-left: 100px;
 }
-.sec1_banner1{
+
+.sec1_banner1 {
     width: 400px;
     margin: 0 auto;
     position: absolute;
     bottom: 0px;
     right: 100px;
     z-index: 9;
-    
+
 }
 
-.sec1_out{
+.sec1_out {
     width: 200px;
     height: 70px;
     background-color: #a89cdc;
@@ -201,7 +215,8 @@ a:hover>.menu_li::after {
     top: 0;
     left: 300px;
 }
-.sec1_in{
+
+.sec1_in {
     width: 200px;
     height: 80%;
     /* background-color: red; */
@@ -213,7 +228,7 @@ a:hover>.menu_li::after {
     opacity: 0.9;
 }
 
-.sec1_img{
+.sec1_img {
     width: 400px;
     height: 100%;
     display: flex;
@@ -223,47 +238,56 @@ a:hover>.menu_li::after {
     box-sizing: border-box;
     border: 1px solid rgb(208, 208, 208);
 }
-.sec1_img_box:first-child{
+
+.sec1_img_box:first-child {
     margin-top: 55px;
     box-sizing: border-box;
     overflow: hidden;
 }
-.sec1_img_box:last-child{
+
+.sec1_img_box:last-child {
     border-left: 1px solid rgb(208, 208, 208);
     padding-top: 50px;
 }
-.sec1_img_box{
+
+.sec1_img_box {
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
-.sec2_box{
+
+.sec2_box {
     width: 200px;
     height: 160px;
 }
-.sec1_img_box img{
+
+.sec1_img_box img {
     width: 200px;
     height: 165px;
     object-fit: cover;
 }
+
 /* ------  section2 ------- */
-#section2{
+#section2 {
     overflow: hidden;
 }
-.sec2_banner{
+
+.sec2_banner {
     width: 100%;
     height: 100%;
-    background-color:white;
+    background-color: white;
     overflow: hidden;
 }
-.sec2_img{
+
+.sec2_img {
     width: 40%;
     height: 100%;
     position: relative;
     float: left;
     margin-left: 50px;
 }
-.sec2_img_box{
+
+.sec2_img_box {
     background: url(../img/취업사진2.jpg) no-repeat center / cover;
     box-shadow: 0px 0px 20px -5px #00000080;
     width: 400px;
@@ -272,10 +296,11 @@ a:hover>.menu_li::after {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     z-index: 9;
 }
-.sec2_box1{
+
+.sec2_box1 {
     width: 100px;
     height: 350px;
     background-color: rgb(176 179 183);
@@ -283,7 +308,8 @@ a:hover>.menu_li::after {
     top: 25%;
     left: 5%;
 }
-.sec2_box2{
+
+.sec2_box2 {
     width: 300px;
     height: 200px;
     background-color: rgb(120 137 153);
@@ -291,19 +317,21 @@ a:hover>.menu_li::after {
     top: 0;
     right: 5%;
 }
-.sec2_box3{
+
+.sec2_box3 {
     display: flex;
     flex-direction: column;
     writing-mode: vertical-rl;
     position: absolute;
-    right:0;
+    right: 0;
     transform: rotate(180deg);
     font-size: 100px;
     font-family: 'Abhaya Libre';
     color: black;
     margin-top: 100px;
 }
-.sex2_content{
+
+.sex2_content {
     width: 50%;
     height: 83%;
     float: right;
@@ -315,28 +343,33 @@ a:hover>.menu_li::after {
     top: 50px;
     padding-left: 50px;
 }
-.content_box{
-}
-.profile_title{
+
+.content_box {}
+
+.profile_title {
     font-family: 'Abhaya Libre', serif;
     font-size: 20px;
     font-weight: 600;
-    color:#154b88;
+    color: #154b88;
 }
-.profile_title img{
+
+.profile_title img {
     width: 17px;
     position: absolute;
     left: -10px;
-    
+
 }
-.profile_content{
+
+.profile_content {
     font-family: 'Noto Sans KR', sans-serif;
     margin-bottom: 30px;
 }
-.profile_content p{
+
+.profile_content p {
     margin: 0;
 }
-.back_title{
+
+.back_title {
     position: absolute;
     bottom: -110px;
     right: -200px;
@@ -345,4 +378,124 @@ a:hover>.menu_li::after {
     font-size: 120px;
     font-weight: 900;
     color: #3274c029;
+}
+
+
+/* ------  section3------- */
+#section3 {
+    position: relative;
+}
+
+.sec3_banner {
+    width: 100%;
+    height: 100%;
+}
+
+.sec3_img1 {
+    background: url(../img/banner3.jpg) no-repeat fixed center / cover;
+    /* background: url(../img/sec3_Banner01.jpg) no-repeat fixed center / cover; */
+    float: right;
+    filter: brightness(0.8);
+}
+
+.sec3_fix {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.sec3_img2 img {
+    height: 400px;
+    position: absolute;
+    right: 200px;
+    top: 25%;
+    box-shadow: 0px 1px 50px 7px #404b6a66;
+    filter: brightness(1);
+}
+
+.sec3_title {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 120px;
+    text-align: center;
+    color: black;
+    position: absolute;
+    right: 400px;
+    top: 25%;
+}
+/* ------  Progress------- */
+.sec3_content{
+    float: left;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 47%;
+    left: 5%;
+    transform: translate(5%, -30%);
+}
+.skills{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+    display: flex;
+}
+.skill{
+    display: flex;
+    align-items: center;
+}
+.skill-name{
+    font-size: 30px;
+    font-family: 'Nanum Myeongjo';
+    font-weight: 900;
+    color: black;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.skill-bar{
+    height: 30px;
+    width: 550px;
+    background-color: rgb(75 26 208 / 9%);
+    border-radius: 20px;
+    margin-left: 50px;
+    box-shadow: 2px 0px 5px 5px inset #f0c2c275;
+    background-color: rgb(208 26 26 / 9%);
+}
+.skill-per{
+    height: 30px;
+    background-image: radial-gradient(circle at 14.64% -11.24%, #9bd4c1 0, #97d5c7 3.85%, #93d5cd 7.69%, #90d5d3 11.54%, #8fd4d8 15.38%, #8fd4dd 19.23%, #90d3e2 23.08%, #92d2e7 26.92%, #96d1ea 30.77%, #9ad0ed 34.62%, #a0cef0 38.46%, #a7cdf1 42.31%, #aecbf2 46.15%, #b5c9f2 50%, #bdc7f1 53.85%, #c4c5ef 57.69%, #ccc3ed 61.54%, #d3c1ea 65.38%, #d9c0e6 69.23%, #dfbee2 73.08%, #e5bcdd 76.92%, #e9bbd8 80.77%, #edbad2 84.62%, #f0bacc 88.46%, #f3bac7 92.31%, #f4bac1 96.15%, #f4babb 100%); border-radius: 20px;
+    position: relative;
+    animation: fillBars 2.4s;
+    filter: brightness(1.1);
+    box-shadow: 2px 0px 5px 5px inset #fff5f563;
+
+}
+.per2{background-image: radial-gradient(circle at -16.45% 25.82%, #6dc5f0 0, #76c3f3 7.14%, #80c1f5 14.29%, #8bbff6 21.43%, #95bcf7 28.57%, #a0baf6 35.71%, #abb8f4 42.86%, #b5b5f2 50%, #bfb2ef 57.14%, #c8b0eb 64.29%, #d1ade6 71.43%, #d8abe1 78.57%, #dfa9db 85.71%, #e6a7d4 92.86%, #eba6ce 100%);}
+.per3{background-image: radial-gradient(circle at 14.64% -11.24%, #73ceff 0, #7fccff 5.56%, #8bc9ff 11.11%, #98c7ff 16.67%, #a5c4ff 22.22%, #b2c1ff 27.78%, #bebeff 33.33%, #c9bbfd 38.89%, #d4b8f8 44.44%, #deb5f2 50%, #e7b2eb 55.56%, #efb0e4 61.11%, #f6aedd 66.67%, #fbacd4 72.22%, #ffabcc 77.78%, #ffabc3 83.33%, #ffabbb 88.89%, #ffabb3 94.44%, #ffacaa 100%);}
+.per4{background-image: linear-gradient(120deg, #a4b3f4 0, #b0b0f1 5.56%, #bcaced 11.11%, #c7a9e8 16.67%, #d2a6e1 22.22%, #dba4da 27.78%, #e2a1d3 33.33%, #e99fca 38.89%, #ee9ec2 44.44%, #f29db9 50%, #f59db0 55.56%, #f69da7 61.11%, #f69e9f 66.67%, #f59f97 72.22%, #f2a18f 77.78%, #efa488 83.33%, #eaa682 88.89%, #e5a97d 94.44%, #deac79 100%);}
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Noto Sans KR';
+    color: #c06e6e;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+.skill-per::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+@keyframes fillBars {
+    from{width:0;}
+    to{width:100%;}
 }
