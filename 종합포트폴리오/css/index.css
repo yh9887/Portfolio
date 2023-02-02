@@ -475,8 +475,6 @@ a:hover>.menu_li::after {
 .skill-per::before{
     content: attr(per);
     position: absolute;
-    padding: 4px 6px;
-    border-radius: 4px;
     font-size: 20px;
     font-weight: 900;
     font-family: 'Noto Sans KR';
@@ -485,16 +483,7 @@ a:hover>.menu_li::after {
     right: 0;
     transform: translateX(50%);
 }
-.skill-per::after{
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    top: -20px;
-    right: 0;
-    transform: translateX(50%) rotate(45deg);
-    border-radius: 2px;
-}
+
 @keyframes fillBars {
     from{width:0;}
     to{width:100%;}
