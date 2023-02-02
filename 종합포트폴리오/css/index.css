@@ -499,3 +499,24 @@ a:hover>.menu_li::after {
     from{width:0;}
     to{width:100%;}
 }
+
+
+/* ------  section4------- */
+#section4{
+}
+.sec4_title{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 120px;
+    color: Black;
+    position: absolute;
+    top: 25.4%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.sec4_img{
+    width: 70%;
+    height: 300px;
+    object-fit: cover;
+    float: left;
+    background: url(../img/sec3_Banner01.jpg) no-repeat fixed center / cover;
+}
