@@ -48,3 +48,35 @@ function intersectionHandler(entry) {
 
 //     })
 // });
+window.addEventListener('scroll', function () {
+
+    let s_top = $(window).scrollTop();
+    if (s_top > 100) {
+        $('.header').css({
+            borderBottom: 'none',
+            position:'fixed',
+            top: 0,
+            left:0,
+            height: '70px',
+            background: '#6260604d'
+        })
+        $('.logo img').css({
+            height: '45px'
+        })
+        $('.header_wrap .logo').css({
+            lineHeight: '100px'
+        })
+    }
+    else {
+        $('.header, .logo img, .header_wrap .logo').removeAttr("style");
+    }
+
+    let header = document.querySelector(".header");
+    let headerHeight = header.offsetHeight;
+    let windowTop = window.scrollY;
+    if (windowTop >= headerHeight) {
+        header.classList.add("drop");
+    } else {
+        header.classList.remove("drop");
+    }
+});

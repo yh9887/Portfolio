@@ -141,6 +141,14 @@ a:hover>.menu_li::after {
     left: 0px;
     height: 1px;
 }
+.header.drop {
+    position: fixed;
+    animation: dropHeader 0.3s;
+}
+@keyframes dropHeader {
+    0% {top: -5rem;}
+    100% {top: 0;}
+}
 
 /* ------  section1 ------- */
 #section1{
