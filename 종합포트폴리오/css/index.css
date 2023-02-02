@@ -1,10 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding");
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Caveat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Bodoni+Moda:opsz@6..96&family=Calligraffitti&family=Caveat:wght@400;700&family=Cormorant:wght@300&family=IM+Fell+Double+Pica:ital@1&family=Niconne&family=Romanesco&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Bodoni+Moda:opsz@6..96&family=Calligraffitti&family=Caveat:wght@400;700&family=Cormorant:wght@300&family=IM+Fell+Double+Pica:ital@1&family=Niconne&family=Old+Standard+TT&family=Poiret+One&family=Romanesco&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Bilbo+Swash+Caps&family=Bodoni+Moda:opsz@6..96&family=Calligraffitti&family=Caveat:wght@400;700&family=Cormorant:wght@300&family=IM+Fell+Double+Pica:ital@1&family=Niconne&family=Old+Standard+TT&family=Poiret+One&family=Romanesco&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Bilbo+Swash+Caps&family=Bodoni+Moda:opsz@6..96&family=Calligraffitti&family=Caveat:wght@400;700&family=Cormorant:wght@300&family=IM+Fell+Double+Pica:ital@1&family=Nanum+Myeongjo&family=Niconne&family=Noto+Sans+KR:wght@100&family=Old+Standard+TT&family=Poiret+One&family=Romanesco&display=swap');
 :root {
     --color-text: #fff;
     --color-bg: #ddd;
@@ -50,7 +44,7 @@ ul {
 
 .section {
     position: relative;
-    /* height: 100vh; */
+    height: 100vh;
     min-height: 100vh;
     box-sizing: border-box;
 }
@@ -221,25 +215,25 @@ a:hover>.menu_li::after {
     box-sizing: border-box;
     border: 1px solid rgb(208, 208, 208);
 }
-.img_box:first-child{
+.sec1_img_box:first-child{
     margin-top: 55px;
     box-sizing: border-box;
     overflow: hidden;
 }
-.img_box:last-child{
+.sec1_img_box:last-child{
     border-left: 1px solid rgb(208, 208, 208);
     padding-top: 50px;
 }
-.img_box{
+.sec1_img_box{
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
-.box{
+.sec2_box{
     width: 200px;
     height: 160px;
 }
-.img_box img{
+.sec1_img_box img{
     width: 200px;
     height: 165px;
     object-fit: cover;
@@ -249,67 +243,98 @@ a:hover>.menu_li::after {
     overflow: hidden;
 }
 .sec2_banner{
-    text-align: center;
-    width: 1300px;
-    background: url(../img/sec2_Banner04.jpg)no-repeat fixed center / cover;
-}
-.sec2_box{
-    width: 70%;
-    height: 1500px;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-}
-.sec2_top{
     width: 100%;
-    height: auto;
-    position: relative;
-    margin-top: 200px;
+    height: 100%;
+    background-color:white;
+    overflow: hidden;
 }
-.sec2_title{
-    color: white;
-    position: absolute;
-    left: 150px;
-    top: 200px;
-    font-family: 'Abhaya Libre', serif;
-    font-size: 120px;
-    line-height: 50px;
-    z-index: 1;
-}
-
 .sec2_img{
-    text-align: center;
-    filter: brightness(80%);
-    width: 700px;
+    width: 40%;
+    height: 100%;
+    position: relative;
+    float: left;
+    margin-left: 50px;
+}
+.sec2_img_box{
+    background: url(../img/취업사진2.jpg) no-repeat center / cover;
+    box-shadow: 0px 0px 20px -5px #00000080;
+    width: 400px;
     height: 500px;
+    margin: 0 auto;
     position: absolute;
-    left: 25%;
-    object-fit: cover;
-    background: url(../img/sec2_Banner04.jpg)no-repeat center / cover;
-    filter: drop-shadow(20px 2px 50px #5f2d316b) brightness(80%);
-    box-shadow: 0px 1px 10px #5f2d316b;
-    transition: all 1s ease;
-    /* animation: grow 1s infinite; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
 }
-.title_parent{
-    text-align: right;
-    overflow-y: hidden;
-    display: block; 
+.sec2_box1{
+    width: 100px;
+    height: 350px;
+    background-color: rgb(176 179 183);
+    position: absolute;
+    top: 25%;
+    left: 5%;
 }
-.title_parent .title_child{
-    font-size: 50px;
-    line-height: 1;
-    /* animation: grow 1s infinite; */
+.sec2_box2{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(120 137 153);
+    position: absolute;
+    top: 0;
+    right: 5%;
+}
+.sec2_box3{
+    display: flex;
+    flex-direction: column;
+    writing-mode: vertical-rl;
+    position: absolute;
+    right:0;
+    transform: rotate(180deg);
+    font-size: 100px;
+    font-family: 'Abhaya Libre';
+    color: black;
+    margin-top: 100px;
+}
+.sex2_content{
+    width: 50%;
+    height: 83%;
+    float: right;
+    color: black;
+    font-family: 'Nanum Myeongjo', serif;
+    box-sizing: border-box;
+    position: relative;
+    border-left: 3.5px solid #1f567942;
+    top: 50px;
+    padding-left: 50px;
+}
+.content_box{
+}
+.profile_title{
+    font-family: 'Abhaya Libre', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color:#154b88;
+}
+.profile_title img{
+    width: 17px;
+    position: absolute;
+    left: -10px;
+    
+}
+.profile_content{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom: 30px;
+}
+.profile_content p{
+    margin: 0;
+}
+.back_title{
+    position: absolute;
+    bottom: -110px;
+    right: -200px;
+    font-family: auto;
+    letter-spacing: -10px;
     font-size: 120px;
-    line-height: 93px;
-    transition: all 1s ease;
-    animation-delay: 0.2s;
-}
-#child2{
-    animation-delay: 0.3s;
-}
-.sec2_animation{animation: grow 1s infinite;}
-@keyframes grow {
-    from { transform: translateY(100px) }
-    to { transform: translateY(0) }
+    font-weight: 900;
+    color: #3274c029;
 }

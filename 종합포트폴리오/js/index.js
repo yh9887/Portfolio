@@ -33,18 +33,18 @@ function intersectionHandler(entry) {
 }
 
 
-$(document).ready(function(){
+// $(document).ready(function(){
 
-    window.addEventListener('scroll', function(){
-        let sec2_o_top = $('#section2').offset().top;
-        let s_top = $(window).scrollTop();
-        // console.log(sec2_o_top, s_top)
+//     window.addEventListener('scroll', function(){
+//         let sec2_o_top = $('#section2').offset().top;
+//         let s_top = $(window).scrollTop();
+//         // console.log(sec2_o_top, s_top)
 
-        if(sec2_o_top == s_top){
-            $('.sec2_img').toggleClass('sec2_animation');
-        }
+//         if(sec2_o_top == s_top){
+//             $('.sec2_img').toggleClass('sec2_animation');
+//         }
 
 
 
-    })
-});
+//     })
+// });
