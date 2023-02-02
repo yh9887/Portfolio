@@ -211,7 +211,7 @@ a:hover>.menu_li::after {
     opacity: 0.9;
 }
 
-.img_wrap{
+.sec1_img{
     width: 400px;
     height: 100%;
     display: flex;
@@ -250,8 +250,66 @@ a:hover>.menu_li::after {
 }
 .sec2_banner{
     text-align: center;
-    filter: brightness(80%);
-}
-.sec2_banner img{
     width: 1300px;
+    background: url(../img/sec2_Banner04.jpg)no-repeat fixed center / cover;
+}
+.sec2_box{
+    width: 70%;
+    height: 1500px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.sec2_top{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 200px;
+}
+.sec2_title{
+    color: white;
+    position: absolute;
+    left: 150px;
+    top: 200px;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 120px;
+    line-height: 50px;
+    z-index: 1;
+}
+
+.sec2_img{
+    text-align: center;
+    filter: brightness(80%);
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    left: 25%;
+    object-fit: cover;
+    background: url(../img/sec2_Banner04.jpg)no-repeat center / cover;
+    filter: drop-shadow(20px 2px 50px #5f2d316b) brightness(80%);
+    box-shadow: 0px 1px 10px #5f2d316b;
+    transition: all 1s ease;
+    /* animation: grow 1s infinite; */
+}
+.title_parent{
+    text-align: right;
+    overflow-y: hidden;
+    display: block; 
+}
+.title_parent .title_child{
+    font-size: 50px;
+    line-height: 1;
+    /* animation: grow 1s infinite; */
+    font-size: 120px;
+    line-height: 93px;
+    transition: all 1s ease;
+    animation-delay: 0.2s;
+}
+#child2{
+    animation-delay: 0.3s;
+}
+.sec2_animation{animation: grow 1s infinite;}
+@keyframes grow {
+    from { transform: translateY(100px) }
+    to { transform: translateY(0) }
 }

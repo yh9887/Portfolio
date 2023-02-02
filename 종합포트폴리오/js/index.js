@@ -12,7 +12,6 @@ let observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             intersectionHandler(entry);
         }
-
     });
 }, config);
 
@@ -33,50 +32,19 @@ function intersectionHandler(entry) {
     }
 }
 
-// ///////////////////////////////////////////////////// ham
-$(function () {
 
-    /* LOCAL STORAGE START */
-    // To reset your local storage
-    localStorage.removeItem('learnMenu');
+$(document).ready(function(){
 
-    //check if menu-pulses are required
-    function checkMenuPulseState() {
-        if (localStorage.getItem('learnMenu') == 'learned') {
-            var $menuPulse = $('.menu-pulse');
-            $menuPulse.addClass('is-learned');
+    window.addEventListener('scroll', function(){
+        let sec2_o_top = $('#section2').offset().top;
+        let s_top = $(window).scrollTop();
+        // console.log(sec2_o_top, s_top)
+
+        if(sec2_o_top == s_top){
+            $('.sec2_img').toggleClass('sec2_animation');
         }
-    }
-    checkMenuPulseState();
-    /* LOCAL STORAGE END */
 
 
-    $(".menu-link").click(function (e) {
-        e.preventDefault();
 
-        /* LOCAL STORAGE START */
-        localStorage.setItem('learnMenu', 'learned');
-        checkMenuPulseState();
-        /* LOCAL STORAGE END */
-
-        $(".menu-overlay").toggleClass("menu-open");
-        $(".menu-toggle").toggleClass("menu-open");
-    });
+    })
 });
-
-
-// ///////////////////////////////////////////////////// Menu이동
-function fnMove(seq) {
-    var sec = $("#section" + seq)
-    var offset = $("#section" + seq).offset();
-    for(let i=0; i<6; i++){
-        // $('.menu-overlay.menu-open').css({ opacity: '0' })
-        $('html, body').animate({
-            scrollTop: offset.top
-        }, 400);
-    }
-}
-
-//
-
-
