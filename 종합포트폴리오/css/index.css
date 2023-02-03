@@ -387,14 +387,15 @@ a:hover>.menu_inner::after {
     height: 30px;
     background-image: radial-gradient(circle at 14.64% -11.24%, #9bd4c1 0, #97d5c7 3.85%, #93d5cd 7.69%, #90d5d3 11.54%, #8fd4d8 15.38%, #8fd4dd 19.23%, #90d3e2 23.08%, #92d2e7 26.92%, #96d1ea 30.77%, #9ad0ed 34.62%, #a0cef0 38.46%, #a7cdf1 42.31%, #aecbf2 46.15%, #b5c9f2 50%, #bdc7f1 53.85%, #c4c5ef 57.69%, #ccc3ed 61.54%, #d3c1ea 65.38%, #d9c0e6 69.23%, #dfbee2 73.08%, #e5bcdd 76.92%, #e9bbd8 80.77%, #edbad2 84.62%, #f0bacc 88.46%, #f3bac7 92.31%, #f4bac1 96.15%, #f4babb 100%); border-radius: 20px;
     position: relative;
-    animation: fillBars 2.4s;
     filter: brightness(1.1);
     box-shadow: 2px 0px 5px 5px inset #fff5f563;
-
+    
+    /* animation: fillBars 2.4s; */
 }
-.per2{background-image: radial-gradient(circle at -16.45% 25.82%, #6dc5f0 0, #76c3f3 7.14%, #80c1f5 14.29%, #8bbff6 21.43%, #95bcf7 28.57%, #a0baf6 35.71%, #abb8f4 42.86%, #b5b5f2 50%, #bfb2ef 57.14%, #c8b0eb 64.29%, #d1ade6 71.43%, #d8abe1 78.57%, #dfa9db 85.71%, #e6a7d4 92.86%, #eba6ce 100%);}
-.per3{background-image: radial-gradient(circle at 14.64% -11.24%, #73ceff 0, #7fccff 5.56%, #8bc9ff 11.11%, #98c7ff 16.67%, #a5c4ff 22.22%, #b2c1ff 27.78%, #bebeff 33.33%, #c9bbfd 38.89%, #d4b8f8 44.44%, #deb5f2 50%, #e7b2eb 55.56%, #efb0e4 61.11%, #f6aedd 66.67%, #fbacd4 72.22%, #ffabcc 77.78%, #ffabc3 83.33%, #ffabbb 88.89%, #ffabb3 94.44%, #ffacaa 100%);}
-.per4{background-image: linear-gradient(120deg, #a4b3f4 0, #b0b0f1 5.56%, #bcaced 11.11%, #c7a9e8 16.67%, #d2a6e1 22.22%, #dba4da 27.78%, #e2a1d3 33.33%, #e99fca 38.89%, #ee9ec2 44.44%, #f29db9 50%, #f59db0 55.56%, #f69da7 61.11%, #f69e9f 66.67%, #f59f97 72.22%, #f2a18f 77.78%, #efa488 83.33%, #eaa682 88.89%, #e5a97d 94.44%, #deac79 100%);}
+.per1{max-width: 90%;}
+.per2{max-width: 90%; background-image: radial-gradient(circle at -16.45% 25.82%, #6dc5f0 0, #76c3f3 7.14%, #80c1f5 14.29%, #8bbff6 21.43%, #95bcf7 28.57%, #a0baf6 35.71%, #abb8f4 42.86%, #b5b5f2 50%, #bfb2ef 57.14%, #c8b0eb 64.29%, #d1ade6 71.43%, #d8abe1 78.57%, #dfa9db 85.71%, #e6a7d4 92.86%, #eba6ce 100%);}
+.per3{max-width: 70%; background-image: radial-gradient(circle at 14.64% -11.24%, #73ceff 0, #7fccff 5.56%, #8bc9ff 11.11%, #98c7ff 16.67%, #a5c4ff 22.22%, #b2c1ff 27.78%, #bebeff 33.33%, #c9bbfd 38.89%, #d4b8f8 44.44%, #deb5f2 50%, #e7b2eb 55.56%, #efb0e4 61.11%, #f6aedd 66.67%, #fbacd4 72.22%, #ffabcc 77.78%, #ffabc3 83.33%, #ffabbb 88.89%, #ffabb3 94.44%, #ffacaa 100%);}
+.per4{max-width: 70%; background-image: linear-gradient(120deg, #a4b3f4 0, #b0b0f1 5.56%, #bcaced 11.11%, #c7a9e8 16.67%, #d2a6e1 22.22%, #dba4da 27.78%, #e2a1d3 33.33%, #e99fca 38.89%, #ee9ec2 44.44%, #f29db9 50%, #f59db0 55.56%, #f69da7 61.11%, #f69e9f 66.67%, #f59f97 72.22%, #f2a18f 77.78%, #efa488 83.33%, #eaa682 88.89%, #e5a97d 94.44%, #deac79 100%);}
 .skill-per::before{
     content: attr(per);
     position: absolute;
@@ -411,7 +412,6 @@ a:hover>.menu_inner::after {
     from{width:0;}
     to{width:100%;}
 }
-
 
 /* ------  section4------- */
 #section4{

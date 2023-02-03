@@ -57,6 +57,16 @@ window.addEventListener('scroll', function () {
     else {
         $('.header, .logo img, .header_wrap .logo').removeAttr("style");
     }
+    let sec3_Height = $('#section3').offset().top;
+    
+    if(s_top >= sec3_Height){
+        $('.skill-per').css({
+            animation: 'fillBars 2.4s'
+        })
+    }
+        else {
+            $('.skill-per').removeAttr("style");
+        }
 
     let header = document.querySelector(".header");
     let headerHeight = header.offsetHeight;
