@@ -1,4 +1,4 @@
-// /////////////////////////////////////////////////////bg color
+// ///////////////////////////////////////////////////// bg color
 
 const sections = document.querySelectorAll('.section');
 
@@ -32,6 +32,8 @@ function intersectionHandler(entry) {
     }
 }
 
+
+// ///////////////////////////////////////////////////// 스크롤
 window.addEventListener('scroll', function () {
 
     let s_top = $(window).scrollTop();
@@ -67,4 +69,13 @@ window.addEventListener('scroll', function () {
 });
 
 
+// ///////////////////////////////////////////////////// 좌표이동
+$(function () {
+	$('.menu_inner').click(function (){
+    	$('html, body').animate({scrollTop: $(this.hash).offset.top}, 300);
+    });
+});
+
+
 // 
+

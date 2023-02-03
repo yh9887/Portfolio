@@ -7,11 +7,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 	<title>Document</title>
-	<link rel="stylesheet" href="종합포트폴리오/css/index.css">
+	<link rel="stylesheet" href="종합포트폴리오/css/index.css">	
+	<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Bodoni+Moda:opsz@6..96&family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
 
 
-	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-	<script defer src="종합포트폴리오/js/index.js"></script>
+	<!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script defer src="종합포트폴리오/js/index.js" ></script>
 
 </head>
 
@@ -28,18 +30,18 @@
 					<div class="header">
 						<div class="header_wrap">
 							<a href="#section1" class="logo"><img src="종합포트폴리오/img/Y-cutout.png" alt=""></a>
-							<div class="menu_ul">
+							<div class="menu_outer">
 								<a href="#section2">
-									<span class="menu_li">About Me</span>
+									<span class="menu_inner">About Me</span>
 								</a>
 								<a href="#section3">
-									<span class="menu_li">Skill</span>
+									<span class="menu_inner">Skill</span>
 								</a>
 								<a href="#section4">
-									<span class="menu_li">Protfolio</span>
+									<span class="menu_inner">Protfolio</span>
 								</a>
 								<a href="#section5">
-									<span class="menu_li">Contact</span>
+									<span class="menu_inner">Contact</span>
 								</a>
 							</div>
 						</div>
@@ -127,10 +129,12 @@
 
 		<div class="section" id="section3" data-bgcolor="#b3c7f087">
 			<div class="sec3_banner">
-				<div class="sec3_img1 sec3_fix"></div>
+				
+				<div class="sec3_img1"></div>
 				<div class="sec3_img2">
 					<img src="종합포트폴리오/img/sec1_Banner05.jpg" alt="">
 				</div>
+				<div class="sec3_title">Skill</div>
 				<div class="sec3_content">
 					<div class="skills">
 						<div class="skill">
@@ -176,12 +180,10 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
-			<div class="sec3_title">Skill</div>
 		</div>
 
-		<div class="section" id="section4" data-bgcolor="#cf9daa29">
+		<div class="section" id="section4" data-bgcolor="#968dff29">
 			<div class="sec4_img"></div>
 			<div class="sec4_title">Portfolio</div>
 		</div>

@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Bilbo+Swash+Caps&family=Bodoni+Moda:opsz@6..96&family=Calligraffitti&family=Caveat:wght@400;700&family=Cormorant:wght@300&family=IM+Fell+Double+Pica:ital@1&family=Nanum+Myeongjo&family=Niconne&family=Noto+Sans+KR:wght@100&family=Old+Standard+TT&family=Poiret+One&family=Romanesco&display=swap');
 
 :root {
     --color-text: #fff;
@@ -20,27 +19,20 @@ body {
     margin: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-a {
-    text-decoration: none;
-}
+html {scroll-behavior: smooth;}
+a {text-decoration: none;}
+p {margin: 0;}
 
 ul {
     list-style: none;
     margin: 0;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
+::-webkit-scrollbar {display: none;}
 
 .sections {
     position: relative;
     display: block;
-    /* padding: 0 6vmax; */
 }
 
 .section {
@@ -48,31 +40,6 @@ ul {
     height: 100vh;
     min-height: 100vh;
     box-sizing: border-box;
-}
-
-
-@-webkit-keyframes fadeInUp {
-    0% {
-        transform: translate3d(0, 55%, 0);
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-@keyframes fadeInUp {
-    0% {
-        transform: translate3d(0, 55%, 0);
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
 }
 
 
@@ -90,7 +57,6 @@ ul {
     width: 100%;
     height: 100%;
     display: flex;
-    /* border: 1px solid; */
 }
 
 .header_wrap .logo {
@@ -101,7 +67,7 @@ ul {
     height: 80px;
 }
 
-.menu_ul {
+.menu_outer {
     display: flex;
     gap: 50px;
     margin-left: 30px;
@@ -109,13 +75,7 @@ ul {
     flex-direction: row;
 }
 
-.menu_li {
-    font-family: 'Bodoni Moda', serif;
-    /* font-family: 'Caveat', cursive;
-    font-family: 'Romanesco', cursive;
-    font-family: 'Cormorant', serif; */
-    font-family: 'Old Standard TT', serif;
-    font-family: 'Poiret One', cursive;
+.menu_inner {
     font-family: 'Abhaya Libre', serif;
     color: black;
     font-size: 18px;
@@ -124,11 +84,11 @@ ul {
     position: relative;
 }
 
-.menu_li:hover {
+.menu_inner:hover {
     opacity: 0.6;
 }
 
-a>.menu_li::after {
+a>.menu_inner::after {
     content: '';
     width: 0;
     left: 0%;
@@ -139,30 +99,23 @@ a>.menu_li::after {
     transition: all .4s ease;
 }
 
-a:hover>.menu_li::after {
+a:hover>.menu_inner::after {
     width: 100%;
     left: 0px;
     height: 1px;
 }
 
 .header.drop {
-    position: fixed;
     animation: dropHeader 0.3s;
 }
 
 @keyframes dropHeader {
-    0% {
-        top: -5rem;
-    }
-
-    100% {
-        top: 0;
-    }
+    0% {top: -5rem;}
+    100% {top: 0;}
 }
 
 /* ------  section1 ------- */
 #section1 {
-    position: relative;
     padding: 70px;
     overflow: hidden;
 }
@@ -176,12 +129,6 @@ a:hover>.menu_li::after {
 }
 
 .sec1_title {
-    /* font-family: 'Caveat', cursive;
-    font-family: 'Romanesco', cursive;
-    font-family: 'Cormorant', serif; */
-    font-family: 'Old Standard TT', serif;
-    font-family: 'Poiret One', cursive;
-    font-family: 'Abhaya Libre', serif;
     font-family: 'Nanum Myeongjo', serif;
     font-size: 120px;
     color: Black;
@@ -204,7 +151,6 @@ a:hover>.menu_li::after {
     bottom: 0px;
     right: 100px;
     z-index: 9;
-
 }
 
 .sec1_out {
@@ -219,7 +165,6 @@ a:hover>.menu_li::after {
 .sec1_in {
     width: 200px;
     height: 80%;
-    /* background-color: red; */
     background-image: radial-gradient(circle at 50% -20.71%, #58cee0 0, #5acde6 4.17%, #5fccec 8.33%, #66cbf1 12.5%, #c0b5da 16.67%, #c3b6de 20.83%, #c6b5e1 25%, #bdb4d6 29.17%, #bfb4d9 33.33%, #c2b5dd 37.5%, #c5b4e0 41.67%, #c9b4e5 45.83%, #cdb3e9 50%, #d2b2ed 54.17%, #dbb0e8 58.33%, #e3ade1 62.5%, #eaabda 66.67%, #efaad3 70.83%, #f4a8cb 75%, #f8a7c3 79.17%, #fba7bb 83.33%, #fca7b3 87.5%, #fdb4a8 91.67%, #fcbfa4 95.83%, #fad99d 100%);
     position: absolute;
     top: 180px;
@@ -232,7 +177,6 @@ a:hover>.menu_li::after {
     width: 400px;
     height: 100%;
     display: flex;
-    /* flex-direction: column; */
     position: absolute;
     right: 150px;
     box-sizing: border-box;
@@ -268,12 +212,8 @@ a:hover>.menu_li::after {
 }
 
 /* ------  section2 ------- */
-#section2 {
-    overflow: hidden;
-}
 
 .sec2_banner {
-    width: 100%;
     height: 100%;
     background-color: white;
     overflow: hidden;
@@ -284,7 +224,7 @@ a:hover>.menu_li::after {
     height: 100%;
     position: relative;
     float: left;
-    margin-left: 50px;
+    padding-left: 50px;
 }
 
 .sec2_img_box {
@@ -316,6 +256,7 @@ a:hover>.menu_li::after {
     position: absolute;
     top: 0;
     right: 5%;
+    
 }
 
 .sec2_box3 {
@@ -328,7 +269,7 @@ a:hover>.menu_li::after {
     font-size: 100px;
     font-family: 'Abhaya Libre';
     color: black;
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 .sex2_content {
@@ -344,7 +285,6 @@ a:hover>.menu_li::after {
     padding-left: 50px;
 }
 
-.content_box {}
 
 .profile_title {
     font-family: 'Abhaya Libre', serif;
@@ -357,16 +297,11 @@ a:hover>.menu_li::after {
     width: 17px;
     position: absolute;
     left: -10px;
-
 }
 
 .profile_content {
     font-family: 'Noto Sans KR', sans-serif;
-    margin-bottom: 30px;
-}
-
-.profile_content p {
-    margin: 0;
+    padding-bottom: 30px;
 }
 
 .back_title {
@@ -382,29 +317,18 @@ a:hover>.menu_li::after {
 
 
 /* ------  section3------- */
-#section3 {
-    position: relative;
-}
 
-.sec3_banner {
-    width: 100%;
-    height: 100%;
-}
 
 .sec3_img1 {
-    background: url(../img/banner3.jpg) no-repeat fixed center / cover;
-    /* background: url(../img/sec3_Banner01.jpg) no-repeat fixed center / cover; */
-    float: right;
+    background: url(../img/sec3_Banner01.jpg) no-repeat fixed center / cover;
+    /* float: right; */
+    position: absolute;
+    right: 0;
     filter: brightness(0.8);
-}
-
-.sec3_fix {
     width: 30%;
     height: 100%;
     object-fit: cover;
-    overflow: hidden;
 }
-
 .sec3_img2 img {
     height: 400px;
     position: absolute;
@@ -436,7 +360,6 @@ a:hover>.menu_li::after {
 .skills{
     width: 100%;
     max-width: 600px;
-    padding: 0 20px;
     display: flex;
 }
 .skill{
@@ -507,5 +430,5 @@ a:hover>.menu_li::after {
     height: 300px;
     object-fit: cover;
     float: left;
-    background: url(../img/sec3_Banner01.jpg) no-repeat fixed center / cover;
+    background: url(../img/sec4_Banner02.jpg) no-repeat fixed center / cover;
 }
