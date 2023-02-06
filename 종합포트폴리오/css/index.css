@@ -417,11 +417,11 @@ a:hover>.menu_inner::after {
 #section4{
 }
 .sec4_title{
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Abhaya Libre';
     font-size: 120px;
     color: Black;
     position: absolute;
-    top: 25.4%;
+    top: 26.7%;
     left: 50%;
     transform: translate(-50%, 0);
 }
