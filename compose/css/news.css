@@ -1,0 +1,13 @@
+
+tr{height: 40px;}
+    table {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        cursor: pointer;
+    }
+thead{background-color: rgb(226, 225, 225);}
+.contents{
+    text-align: left;
+}
+p{margin: 0;}

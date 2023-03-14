@@ -22,22 +22,6 @@ var swiper = new Swiper(".mySwiper", {
   // },
 });
 
-$('.slide_img2').on('mouseover', function () {
-  swiper.autoplay.stop();
-  $(this).css({ opacity: '1', filter: 'brightness(50%)' })
-  $('.brand_btn').css({ opacity: '1' })
-});
-$('.slide_img2').on('mouseout', function () {
-  swiper.autoplay.start();
-  $(this).css({ opacity: '0' })
-  $('.brand_btn').css({ opacity: '0' })
-});
-$('.brand_btn').on('mouseover', function () {
-  // swiper.autoplay.stop();
-  $(this).css({ opacity: '1' })
-  $('.slide_img2').css({ opacity: '1', filter: 'brightness(50%)' })
-});
-
 
 /////////////////////////////////////////////////////////////////////////
 
@@ -80,7 +64,7 @@ $(function () {
         ham($('.brand_logo '), 'translateY(0px)', '1', '500');
         ham($('.brand_border'), 'scale(1)', '1','700');
         ham($('.brand_txt1'), 'translateY(0px)', '1','1000');
-        ham($('.brand_txt2'), 'translateY(0px)', '1','1200');
+        ham($('.brand_txt2'), 'translateY(0px)', '1','1000');
       }
       else{
         $('.main_txt1 h1, .main_txt1 h1 span, .main_txt1 h1 div, .brand_logo, .brand_border, .brand_txt1, .brand_txt2').removeAttr("style");

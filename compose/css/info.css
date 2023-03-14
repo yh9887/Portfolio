@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.info_wrap{
+    width: 80%;
+    margin: 150px auto;
+}
+.info_header{
+    padding-bottom: 25px;
+    border-bottom: 2px solid;
+}
+.title{
+    font-size:25px;
+}
+.data{
+    font-size: 15px;
+        display: flex;
+    justify-content: space-between;
+}
+.name{
+    float: right;
+}
+.info_content{
+    height: 300px;
+}
+.info_list{
+    float: right;
+}
+input{
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+}
