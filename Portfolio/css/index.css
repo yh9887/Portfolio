@@ -432,3 +432,69 @@ a:hover>.menu_inner::after {
     float: left;
     background: url(../img/sec4_Banner02.jpg) no-repeat fixed center / cover;
 }
+
+/* ------  section5------- */
+#section5{
+    padding: 100px;
+}
+.contact_box{
+    width: 75%;
+    height:70%;
+    margin: 150px auto;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+}
+.contact_img{
+    width: 300px;
+    min-width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: floralwhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 8px 8px 0 0 rgb(0 0 0 / 20%);
+}
+.contact_img img{
+    width: 200px;
+}
+#phone{
+    background-color: #ffe4cb;
+}
+#kakaotalk{
+    background-color: #fdea43;
+}
+#kakaotalk img{
+    width: 300px;
+}
+#email{
+    background-color: #ffcaca;
+}
+.contact_txt{
+    text-align: center;
+    font-family: 'Abhaya Libre';
+    color:#ffa406;
+}
+.contact_txt h1{
+    margin-bottom: 0;
+}
+.contact_txt p{
+    font-size: 20px;
+    font-family: 'Nanum Myeongjo';
+    font-weight: 600;
+}
+.cY{
+    color: #ffcf00;
+}
+.cT{
+    color: tomato;
+}
+.sec5_title{
+    font-family: 'Abhaya Libre';
+    font-size: 120px;
+    color: Black;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
