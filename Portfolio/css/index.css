@@ -303,6 +303,9 @@ a:hover>.menu_inner::after {
     font-family: 'Noto Sans KR', sans-serif;
     padding-bottom: 30px;
 }
+.profile_content >p {
+    padding-right: 100px;
+}
 
 .back_title {
     position: absolute;
@@ -353,7 +356,7 @@ a:hover>.menu_inner::after {
     width: 50%;
     height: 100%;
     position: absolute;
-    top: 47%;
+    top: 37%;
     left: 5%;
     transform: translate(5%, -30%);
 }
@@ -365,6 +368,7 @@ a:hover>.menu_inner::after {
 .skill{
     display: flex;
     align-items: center;
+    height: 130px;
 }
 .skill-name{
     font-size: 30px;
@@ -373,6 +377,10 @@ a:hover>.menu_inner::after {
     color: black;
     text-transform: uppercase;
     margin: 20px 0;
+}
+.skill-name > img{
+    width: 90px;
+    height: 90px;
 }
 .skill-bar{
     height: 30px;
@@ -396,6 +404,7 @@ a:hover>.menu_inner::after {
 .per2{max-width: 90%; background-image: radial-gradient(circle at -16.45% 25.82%, #6dc5f0 0, #76c3f3 7.14%, #80c1f5 14.29%, #8bbff6 21.43%, #95bcf7 28.57%, #a0baf6 35.71%, #abb8f4 42.86%, #b5b5f2 50%, #bfb2ef 57.14%, #c8b0eb 64.29%, #d1ade6 71.43%, #d8abe1 78.57%, #dfa9db 85.71%, #e6a7d4 92.86%, #eba6ce 100%);}
 .per3{max-width: 70%; background-image: radial-gradient(circle at 14.64% -11.24%, #73ceff 0, #7fccff 5.56%, #8bc9ff 11.11%, #98c7ff 16.67%, #a5c4ff 22.22%, #b2c1ff 27.78%, #bebeff 33.33%, #c9bbfd 38.89%, #d4b8f8 44.44%, #deb5f2 50%, #e7b2eb 55.56%, #efb0e4 61.11%, #f6aedd 66.67%, #fbacd4 72.22%, #ffabcc 77.78%, #ffabc3 83.33%, #ffabbb 88.89%, #ffabb3 94.44%, #ffacaa 100%);}
 .per4{max-width: 70%; background-image: linear-gradient(120deg, #a4b3f4 0, #b0b0f1 5.56%, #bcaced 11.11%, #c7a9e8 16.67%, #d2a6e1 22.22%, #dba4da 27.78%, #e2a1d3 33.33%, #e99fca 38.89%, #ee9ec2 44.44%, #f29db9 50%, #f59db0 55.56%, #f69da7 61.11%, #f69e9f 66.67%, #f59f97 72.22%, #f2a18f 77.78%, #efa488 83.33%, #eaa682 88.89%, #e5a97d 94.44%, #deac79 100%);}
+.per5{max-width: 70%; background-image: linear-gradient(120deg, #a4b3f4 0, #b0b0f1 5.56%, #bcaced 11.11%, #c7a9e8 16.67%, #d2a6e1 22.22%, #dba4da 27.78%, #e2a1d3 33.33%, #e99fca 38.89%, #ee9ec2 44.44%, #f29db9 50%, #f59db0 55.56%, #f69da7 61.11%, #f69e9f 66.67%, #f59f97 72.22%, #f2a18f 77.78%, #efa488 83.33%, #eaa682 88.89%, #e5a97d 94.44%, #deac79 100%);}
 .skill-per::before{
     content: attr(per);
     position: absolute;
@@ -415,24 +424,29 @@ a:hover>.menu_inner::after {
 
 /* ------  section4------- */
 #section4{
+    height: auto;
 }
 .sec4_title{
     font-family: 'Abhaya Libre';
     font-size: 120px;
     color: Black;
     position: absolute;
-    top: 26.7%;
-    left: 50%;
-    transform: translate(-50%, 0);
+    top: 10.5%;
+    left: 56.1%;
+    transform: translate(-50%, 0%);
 }
 .sec4_img{
     width: 70%;
     height: 300px;
     object-fit: cover;
-    float: left;
     background: url(../img/sec4_Banner02.jpg) no-repeat fixed center / cover;
 }
-
+.sec4_content{
+    width: 100%;
+    height: 1000px;
+    padding: 300px;
+    /* background-color: yellow; */
+}
 /* ------  section5------- */
 #section5{
     padding: 100px;
