@@ -477,19 +477,36 @@ a:hover>.menu_inner::after {
     margin-top: 20px;
 }
 .sec4_box{
+    position: relative;
     width: calc(100% / 3);
     height: 250px;
     border: 1px solid rgba(106, 106, 106, 0.144);
     box-shadow: 0 0 15px rgb(236 91 102 / 35%);
     box-sizing: border-box;
+    overflow: hidden;
+}
+.sec4_box > img:hover {
+    scale: 1.1;
+    transition: 0.3s;
+    filter:brightness(50%);
 }
 .sec4_box > img{
+    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
     
 }
-
+.sec4_in_box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    width: 80%;
+    height: 80%;
+    border: 1px solid white;
+}
 /* ------  section5------- */
 #section5{
     padding: 100px;
