@@ -14,7 +14,7 @@ body {
     background: var(--color-bg);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    transition: background 1s;
+    transition: background 0.6s;
     overflow-x: hidden;
     margin: 0;
 }
@@ -114,6 +114,9 @@ a:hover>.menu_inner::after {
     100% {top: 0;}
 }
 
+
+
+
 /* ------  section1 ------- */
 #section1 {
     padding: 70px;
@@ -131,7 +134,8 @@ a:hover>.menu_inner::after {
 .sec1_title {
     font-family: 'Nanum Myeongjo', serif;
     font-size: 120px;
-    color: Black;
+    color: white;
+    text-shadow: 0 0 1px #fff, 0 0 0px #fff, 0 0 9px #8e85e8, 0 0 5px #091d95, 0 0 0px #550e3e, 0 0 0px #280a21, 0 0 0px #15010b, 0 0 0 #190a4f;
     letter-spacing: -10px;
     line-height: 100px;
     position: absolute;
@@ -180,7 +184,7 @@ a:hover>.menu_inner::after {
     position: absolute;
     right: 150px;
     box-sizing: border-box;
-    border: 1px solid rgb(208, 208, 208);
+    border: 1px solid rgb(208 208 208 / 25%);
 }
 
 .sec1_img_box:first-child {
@@ -190,7 +194,7 @@ a:hover>.menu_inner::after {
 }
 
 .sec1_img_box:last-child {
-    border-left: 1px solid rgb(208, 208, 208);
+    border-left: 1px solid rgb(208 208 208 / 25%);
     padding-top: 50px;
 }
 
@@ -268,7 +272,8 @@ a:hover>.menu_inner::after {
     transform: rotate(180deg);
     font-size: 100px;
     font-family: 'Abhaya Libre';
-    color: black;
+    color:white;
+    text-shadow: 0 0 4px  #071b39, 0 0 0px #fff, 0 0 9px #0a183c, 0 0 5px #091d95, 0 0 0px #120e3b, 0 0 0px #1703ae, 0 0 0px #0f243b, 0 0 0 #190a4f;
     padding-top: 100px;
 }
 
@@ -345,11 +350,14 @@ a:hover>.menu_inner::after {
     font-family: 'Abhaya Libre', serif;
     font-size: 120px;
     text-align: center;
-    color: black;
+    color: rgb(72, 91, 214);
     position: absolute;
     right: 400px;
     top: 25%;
-}
+
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 0px #fff, 0 0 9px #2c46ff, 0 0 5px #3b19ff, 0 0 0px #242db9, 0 0 0px #2c50ec, 0 0 0px #3e2adf, 0 0 0 #292dcd;
+}   
 /* ------  Progress------- */
 .sec3_content{
     float: left;
@@ -425,50 +433,63 @@ a:hover>.menu_inner::after {
 /* ------  section4------- */
 #section4{
     height: auto;
-    background-color: rgba(255, 255, 255, 0.489);
+    /* background-color: rgba(255, 255, 255, 0.489); */
 
 }
 .sec4_title{
     font-family: 'Abhaya Libre';
     font-size: 120px;
-    color: Black;
-    position: absolute;
-    top: 10.5%;
-    left: 56.1%;
-    transform: translate(-50%, 0%);
+    margin-top: 30px;
+    transform: translateY(10px);
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 7px #ff529100, 0 0 0px #fff, 0 0 9px #ff0a4b, 0 0 5px #ff006e, 0 0 0px #f00359, 0 0 0px #ff0043, 0 0 0px #f08, 0 0 0 #f06;
 }
+
+
+
+
 .sec4_img{
     width: 70%;
     height: 300px;
     object-fit: cover;
     background: url(../img/sec4_Banner02.jpg) no-repeat fixed center / cover;
+    opacity: 0.7;
 }
 .sec4_content{
-    width: 85%;
-    height: 1000px;
-    margin: 70px auto 0  ;
+    width: 60%;
+    height: auto;
+    margin: 0px auto;
     padding: 30px;
+    box-sizing: border-box;
+    border-radius: 0px;
+    background-color: rgb(202 97 97 / 7%);
+    border-radius: 15px;
+    
 }
-.sec4_content_title{
+.sec4_box_wrap{
     width: 100%;
-    height: 100px;
     display: flex;
-    align-items: center;
+    gap: 20px;
     justify-content: space-between;
 }
-.sec4_content_title > h1{
-    color: black;
-    font-family: 'Noto Sans KR';
-    font-size: 40px;
-    letter-spacing: -4px;
-    float: left;
+.sec4_box_wrap:last-child{
+    margin-top: 20px;
 }
-.sec4_title_border{
-    height: 1px;
-    width: 90%;
-    background-color: rgb(0, 0, 0);
-    float: right;
+.sec4_box{
+    width: calc(100% / 3);
+    height: 250px;
+    border: 1px solid rgba(106, 106, 106, 0.144);
+    box-shadow: 0 0 15px rgb(236 91 102 / 35%);
+    box-sizing: border-box;
 }
+.sec4_box > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
 /* ------  section5------- */
 #section5{
     padding: 100px;
@@ -486,17 +507,17 @@ a:hover>.menu_inner::after {
     min-width: 300px;
     height: 300px;
     border-radius: 50%;
-    background-color: floralwhite;
+    /* background-color: floralwhite; */
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 8px 8px 0 0 rgb(0 0 0 / 20%);
+    box-shadow: 8px 8px 0 0 rgb(134 21 21 / 53%);
 }
 .contact_img img{
     width: 200px;
 }
 #phone{
-    background-color: #ffe4cb;
+    background-color:#ffdfa0;
 }
 #kakaotalk{
     background-color: #fdea43;
@@ -521,7 +542,7 @@ a:hover>.menu_inner::after {
     font-weight: 600;
 }
 .cY{
-    color: #ffcf00;
+    color: #3b2824;
 }
 .cT{
     color: tomato;
@@ -529,7 +550,8 @@ a:hover>.menu_inner::after {
 .sec5_title{
     font-family: 'Abhaya Libre';
     font-size: 120px;
-    color: Black;
+    color: white;
+    text-shadow: 0 0 1px #fff, 0 0 0px #fff, 0 0 9px #e1077c, 0 0 5px #eb16d4, 0 0 0px #fa02af, 0 0 0px #e803b2, 0 0 0px #df177b, 0 0 0 #e34f4f;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
