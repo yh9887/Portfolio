@@ -287,7 +287,7 @@ a:hover>.menu_inner::after {
     position: relative;
     border-left: 3.5px solid #1f567942;
     top: 50px;
-    padding-left: 50px;
+    padding: 60px;
 }
 
 
